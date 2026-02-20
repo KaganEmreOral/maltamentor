@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "packages": "Packages",
+    "blog": "Blog",
+    "testimonials": "Testimonials",
+    "bookMeeting": "Book a Meeting",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTitle": "Mentor Malta",
+    "heroSubtitle": "Expert mentoring for your success in Malta and beyond.",
+    "heroCta": "Book a Meeting",
+    "heroSecondary": "Our Packages",
+    "featuresTitle": "Why Choose Us",
+    "features": {
+      "one": "Experienced mentors with proven track records",
+      "two": "Tailored programs for individuals and businesses",
+      "three": "Flexible sessions in English and Turkish"
+    },
+    "ctaTitle": "Ready to get started?",
+    "ctaText": "Schedule a free introductory call.",
+    "ctaButton": "Book a Meeting"
+  },
+  "about": {
+    "title": "About Mentor Malta",
+    "subtitle": "We help individuals and businesses achieve their goals through structured mentoring.",
+    "mission": "Our Mission",
+    "missionText": "To provide accessible, high-quality mentoring that empowers people to grow personally and professionally in Malta and internationally.",
+    "values": "Our Values",
+    "value1": "Integrity & Trust",
+    "value2": "Excellence",
+    "value3": "Inclusivity"
+  },
+  "packages": {
+    "title": "Our Packages",
+    "subtitle": "Choose the right plan for your journey.",
+    "perSession": "per session",
+    "bookNow": "Book Now",
+    "popular": "Popular",
+    "feature1": "One-on-one sessions",
+    "feature2": "Action plans & follow-up",
+    "feature3": "Email support",
+    "feature4": "Priority scheduling"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Insights and updates from Mentor Malta.",
+    "readMore": "Read more",
+    "backToBlog": "Back to Blog",
+    "publishedOn": "Published on",
+    "noPosts": "No posts yet. Check back soon."
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What our clients say about us."
+  },
+  "book": {
+    "title": "Book a Meeting",
+    "subtitle": "Select a time that works for you. We'll take it from there."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Send us a message and we'll get back to you soon.",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Thank you! Your message has been sent.",
+    "error": "Something went wrong. Please try again."
+  },
+  "newsletter": {
+    "title": "Stay in the loop",
+    "placeholder": "Your email address",
+    "subscribe": "Subscribe",
+    "success": "Thanks for subscribing!",
+    "error": "Subscription failed. Try again."
+  },
+  "footer": {
+    "tagline": "Mentor Malta — Your partner in growth.",
+    "links": "Quick Links",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "copyright": "All rights reserved."
+  }
+}

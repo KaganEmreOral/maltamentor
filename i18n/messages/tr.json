@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "packages": "Paketler",
+    "blog": "Blog",
+    "testimonials": "Referanslar",
+    "bookMeeting": "Görüşme Ayır",
+    "contact": "İletişim"
+  },
+  "home": {
+    "heroTitle": "Mentor Malta",
+    "heroSubtitle": "Malta ve ötesinde başarınız için uzman mentorluk.",
+    "heroCta": "Görüşme Ayır",
+    "heroSecondary": "Paketlerimiz",
+    "featuresTitle": "Neden Biz",
+    "features": {
+      "one": "Kanıtlanmış deneyime sahip mentorlar",
+      "two": "Bireyler ve işletmeler için özelleştirilmiş programlar",
+      "three": "İngilizce ve Türkçe esnek seanslar"
+    },
+    "ctaTitle": "Başlamaya hazır mısınız?",
+    "ctaText": "Ücretsiz tanışma görüşmesi planlayın.",
+    "ctaButton": "Görüşme Ayır"
+  },
+  "about": {
+    "title": "Mentor Malta Hakkında",
+    "subtitle": "Bireylerin ve işletmelerin yapılandırılmış mentorlukla hedeflerine ulaşmalarına yardımcı oluyoruz.",
+    "mission": "Misyonumuz",
+    "missionText": "Malta ve uluslararası alanda insanların kişisel ve profesyonel olarak gelişmelerini sağlayan erişilebilir, yüksek kaliteli mentorluk sunmak.",
+    "values": "Değerlerimiz",
+    "value1": "Dürüstlük ve Güven",
+    "value2": "Mükemmellik",
+    "value3": "Kapsayıcılık"
+  },
+  "packages": {
+    "title": "Paketlerimiz",
+    "subtitle": "Yolculuğunuz için doğru planı seçin.",
+    "perSession": "seans başına",
+    "bookNow": "Hemen Ayır",
+    "popular": "Popüler",
+    "feature1": "Bire bir seanslar",
+    "feature2": "Aksiyon planları ve takip",
+    "feature3": "E-posta desteği",
+    "feature4": "Öncelikli randevu"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Mentor Malta'dan içgörüler ve güncellemeler.",
+    "readMore": "Devamını oku",
+    "backToBlog": "Bloga Dön",
+    "publishedOn": "Yayın tarihi",
+    "noPosts": "Henüz yazı yok. Yakında tekrar bakın."
+  },
+  "testimonials": {
+    "title": "Referanslar",
+    "subtitle": "Müşterilerimiz bizim hakkımızda ne söylüyor."
+  },
+  "book": {
+    "title": "Görüşme Ayır",
+    "subtitle": "Size uyan bir zaman seçin. Gerisini biz hallederiz."
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "subtitle": "Mesaj gönderin, en kısa sürede size dönüş yapalım.",
+    "name": "Ad Soyad",
+    "email": "E-posta",
+    "subject": "Konu",
+    "message": "Mesajınız",
+    "send": "Gönder",
+    "success": "Teşekkürler! Mesajınız iletildi.",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin."
+  },
+  "newsletter": {
+    "title": "Güncel kalın",
+    "placeholder": "E-posta adresiniz",
+    "subscribe": "Abone Ol",
+    "success": "Abone olduğunuz için teşekkürler!",
+    "error": "Abonelik başarısız. Tekrar deneyin."
+  },
+  "footer": {
+    "tagline": "Mentor Malta — Gelişimde ortağınız.",
+    "links": "Hızlı Bağlantılar",
+    "legal": "Yasal",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları",
+    "copyright": "Tüm hakları saklıdır."
+  }
+}
