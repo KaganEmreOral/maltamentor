@@ -53,11 +53,12 @@ export async function getPosts(locale: string, limit = 20): Promise<Post[]> {
 export async function getPostBySlug(slug: string): Promise<Post | null> {
   if (!projectId) return null;
   try {
-    const post = await sanityClient.fetch<Post[]>(
-      `*[_type == "post" && slug.current == $slug][0] { ${postFields} }`,
+    const result = await sanityClient.fetch<Post[]>(
+      `*[_type == "post" && slug.current == $slug][0...1] { ${postFields} }`,
       { slug }
     );
-    return post || null;
+    const post = result?.[0];
+    return post ?? null;
   } catch {
     return null;
   }
