@@ -1,6 +1,7 @@
 'use client';
 
-import { useTranslations, useLocale, Link, usePathname } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import { Link, usePathname } from 'next-intl/navigation';
 import { useState } from 'react';
 
 const navLinks = [

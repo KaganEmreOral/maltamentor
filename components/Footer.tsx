@@ -1,6 +1,7 @@
 'use client';
 
-import { useTranslations, Link } from 'next-intl';
+import { useTranslations } from 'next-intl';
+import { Link } from 'next-intl/navigation';
 import { NewsletterForm } from './NewsletterForm';
 
 export function Footer() {

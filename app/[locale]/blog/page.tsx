@@ -1,6 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
-import { Link } from 'next-intl';
+import { Link } from 'next-intl/navigation';
 import { getPosts } from '@/lib/sanity';
 import Image from 'next/image';
 import { urlFor } from '@/lib/sanity';
