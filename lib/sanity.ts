@@ -5,16 +5,22 @@ const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '';
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production';
 const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION || '2024-01-01';
 
-export const sanityClient = createClient({
-  projectId,
-  dataset,
-  apiVersion,
-  useCdn: process.env.NODE_ENV === 'production',
-});
+const _client = projectId
+  ? createClient({
+      projectId,
+      dataset,
+      apiVersion,
+      useCdn: process.env.NODE_ENV === 'production',
+    })
+  : null;
 
-const builder = imageUrlBuilder(sanityClient);
+export const sanityClient = _client;
+
+const noopChain = { width: () => noopChain, height: () => noopChain, url: () => '' };
+const builder = _client ? imageUrlBuilder(_client) : null;
 
 export function urlFor(source: { _type: string; asset?: { _ref: string } }) {
+  if (!builder) return noopChain;
   return builder.image(source);
 }
 
@@ -39,9 +45,9 @@ const postFields = `
 `;
 
 export async function getPosts(locale: string, limit = 20): Promise<Post[]> {
-  if (!projectId) return [];
+  if (!_client) return [];
   try {
-    const posts = await sanityClient.fetch<Post[]>(
+    const posts = await _client.fetch<Post[]>(
       `*[_type == "post"] | order(publishedAt desc) [0...${limit}] { ${postFields} }`
     );
     return posts;
@@ -51,9 +57,9 @@ export async function getPosts(locale: string, limit = 20): Promise<Post[]> {
 }
 
 export async function getPostBySlug(slug: string): Promise<Post | null> {
-  if (!projectId) return null;
+  if (!_client) return null;
   try {
-    const result = await sanityClient.fetch<Post[]>(
+    const result = await _client.fetch<Post[]>(
       `*[_type == "post" && slug.current == $slug][0...1] { ${postFields} }`,
       { slug }
     );
