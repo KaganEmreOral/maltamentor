@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Link } from 'next-intl/navigation';
+import { LocaleLink } from './LocaleLink';
 import { NewsletterForm } from './NewsletterForm';
 
 export function Footer() {
@@ -15,9 +15,9 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <Link href="/" className="text-lg font-semibold text-malta-red">
+            <LocaleLink href="/" className="text-lg font-semibold text-malta-red">
               Mentor Malta
-            </Link>
+            </LocaleLink>
             <p className="mt-2 text-sm text-gray-600">{t('tagline')}</p>
             <div className="mt-6">
               <NewsletterForm />
@@ -27,34 +27,34 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-900">{t('links')}</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="/about" className="text-sm text-gray-600 hover:text-malta-red">
+                <LocaleLink href="/about" className="text-sm text-gray-600 hover:text-malta-red">
                   {tNav('about')}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/packages" className="text-sm text-gray-600 hover:text-malta-red">
+                <LocaleLink href="/packages" className="text-sm text-gray-600 hover:text-malta-red">
                   {tNav('packages')}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/blog" className="text-sm text-gray-600 hover:text-malta-red">
+                <LocaleLink href="/blog" className="text-sm text-gray-600 hover:text-malta-red">
                   {tNav('blog')}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/testimonials" className="text-sm text-gray-600 hover:text-malta-red">
+                <LocaleLink href="/testimonials" className="text-sm text-gray-600 hover:text-malta-red">
                   {tNav('testimonials')}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/book" className="text-sm text-gray-600 hover:text-malta-red">
+                <LocaleLink href="/book" className="text-sm text-gray-600 hover:text-malta-red">
                   {tNav('bookMeeting')}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-gray-600 hover:text-malta-red">
+                <LocaleLink href="/contact" className="text-sm text-gray-600 hover:text-malta-red">
                   {tNav('contact')}
-                </Link>
+                </LocaleLink>
               </li>
             </ul>
           </div>
@@ -62,14 +62,14 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-900">{t('legal')}</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="/privacy" className="text-sm text-gray-600 hover:text-malta-red">
+                <LocaleLink href="/privacy" className="text-sm text-gray-600 hover:text-malta-red">
                   {t('privacy')}
-                </Link>
+                </LocaleLink>
               </li>
               <li>
-                <Link href="/terms" className="text-sm text-gray-600 hover:text-malta-red">
+                <LocaleLink href="/terms" className="text-sm text-gray-600 hover:text-malta-red">
                   {t('terms')}
-                </Link>
+                </LocaleLink>
               </li>
             </ul>
           </div>

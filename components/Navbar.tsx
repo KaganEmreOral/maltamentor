@@ -1,8 +1,10 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import { Link, usePathname } from 'next-intl/navigation';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { LocaleLink } from './LocaleLink';
+import Link from 'next/link';
 
 const navLinks = [
   { key: 'home', href: '/' },
@@ -14,27 +16,33 @@ const navLinks = [
   { key: 'contact', href: '/contact' },
 ] as const;
 
+const defaultLocale = 'en';
+
 export function Navbar() {
   const t = useTranslations('nav');
-  const pathname = usePathname();
+  const fullPathname = usePathname();
   const locale = useLocale();
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const pathWithoutLocale = locale === defaultLocale ? fullPathname : fullPathname?.replace(/^\/tr/, '') || '/';
+  const pathForActive = pathWithoutLocale || '/';
+
   const switchLocale = locale === 'en' ? 'tr' : 'en';
+  const switchHref = switchLocale === 'en' ? pathWithoutLocale || '/' : `/${switchLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
   const switchLabel = locale === 'en' ? 'TR' : 'EN';
 
   return (
     <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2 font-semibold text-malta-red">
+        <LocaleLink href="/" className="flex items-center gap-2 font-semibold text-malta-red">
           <span className="text-xl tracking-tight">Mentor Malta</span>
-        </Link>
+        </LocaleLink>
 
         <div className="hidden items-center gap-8 md:flex">
           {navLinks.map(({ key, href }) => {
-            const isActive = pathname === href || (href !== '/' && pathname.startsWith(href));
+            const isActive = pathForActive === href || (href !== '/' && pathForActive.startsWith(href));
             return (
-              <Link
+              <LocaleLink
                 key={key}
                 href={href}
                 className={`text-sm font-medium transition-colors ${
@@ -42,12 +50,11 @@ export function Navbar() {
                 }`}
               >
                 {t(key)}
-              </Link>
+              </LocaleLink>
             );
           })}
           <Link
-            href={pathname}
-            locale={switchLocale}
+            href={switchHref}
             className="rounded-md border border-malta-red bg-malta-red px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-malta-red-600"
           >
             {switchLabel}
@@ -74,18 +81,17 @@ export function Navbar() {
         <div className="border-t border-gray-200 bg-white px-4 py-4 md:hidden">
           <div className="flex flex-col gap-2">
             {navLinks.map(({ key, href }) => (
-              <Link
+              <LocaleLink
                 key={key}
                 href={href}
                 className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-malta-red"
                 onClick={() => setMobileOpen(false)}
               >
                 {t(key)}
-              </Link>
+              </LocaleLink>
             ))}
             <Link
-              href={pathname}
-              locale={switchLocale}
+              href={switchHref}
               className="mt-2 rounded-md bg-malta-red px-3 py-2 text-center text-sm font-medium text-white"
               onClick={() => setMobileOpen(false)}
             >

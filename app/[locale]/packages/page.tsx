@@ -1,8 +1,12 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
-import { Link } from 'next-intl/navigation';
+import Link from 'next/link';
 
 type Props = { params: Promise<{ locale: string }> };
+
+function localeHref(locale: string, path: string) {
+  return locale === 'en' ? path : `/${locale}${path}`;
+}
 
 export async function generateMetadata({ params }: Props) {
   const { locale } = await params;
@@ -53,7 +57,7 @@ export default async function PackagesPage({ params }: Props) {
               {pkg.popular && <li>✓ {t('feature4')}</li>}
             </ul>
             <Link
-              href="/book"
+              href={localeHref(locale, '/book')}
               className={`mt-6 block w-full rounded-md py-2.5 text-center text-sm font-medium ${
                 pkg.popular
                   ? 'bg-malta-red text-white hover:bg-malta-red-600'

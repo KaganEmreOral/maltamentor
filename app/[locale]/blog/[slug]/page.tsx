@@ -1,7 +1,11 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
-import { Link } from 'next-intl/navigation';
+import Link from 'next/link';
 import { getPostBySlug, getPosts } from '@/lib/sanity';
+
+function localeHref(locale: string, path: string) {
+  return locale === 'en' ? path : `/${locale}${path}`;
+}
 import Image from 'next/image';
 import { urlFor } from '@/lib/sanity';
 import { notFound } from 'next/navigation';
@@ -29,7 +33,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-      <Link href="/blog" className="text-sm text-malta-red hover:underline">
+      <Link href={localeHref(locale, '/blog')} className="text-sm text-malta-red hover:underline">
         ← {t('backToBlog')}
       </Link>
       <h1 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl">{post.title}</h1>
