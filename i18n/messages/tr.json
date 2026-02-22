@@ -1,85 +1,67 @@
 {
   "nav": {
     "home": "Ana Sayfa",
-    "about": "Hakkımızda",
+    "about": "Hakkımda",
     "packages": "Paketler",
     "blog": "Blog",
-    "testimonials": "Referanslar",
-    "bookMeeting": "Görüşme Ayır",
     "contact": "İletişim"
   },
   "home": {
-    "heroTitle": "Mentor Malta",
-    "heroSubtitle": "Malta ve ötesinde başarınız için uzman mentorluk.",
-    "heroCta": "Görüşme Ayır",
-    "heroSecondary": "Paketlerimiz",
-    "featuresTitle": "Neden Biz",
-    "features": {
-      "one": "Kanıtlanmış deneyime sahip mentorlar",
-      "two": "Bireyler ve işletmeler için özelleştirilmiş programlar",
-      "three": "İngilizce ve Türkçe esnek seanslar"
-    },
-    "ctaTitle": "Başlamaya hazır mısınız?",
-    "ctaText": "Ücretsiz tanışma görüşmesi planlayın.",
-    "ctaButton": "Görüşme Ayır"
+    "heroTitle": "Malta'da IT Profesyonellerinin Kariyer Kurmasına Yardımcı Oluyoruz",
+    "heroCta": "Danışmanlık Talebi",
+    "introTitle": "Malta'ya Taşınan IT Profesyonleri için Mentorluk",
+    "introText": "İster Malta'ya taşınmayı düşünün ister zaten burada olun, CV ve LinkedIn optimizasyonundan mülakat hazırlığına ve taşınma tavsiyelerine kadar yerel IT iş piyasasına odaklı pratik mentorluk sunuyorum. Amacım, becerilerinize ve hedeflerinize uygun bir rol bulmanıza yardımcı olmak.",
+    "ctaTitle": "Bir sonraki adımı atmaya hazır mısınız?",
+    "ctaButton": "Danışmanlık Talebi"
   },
   "about": {
-    "title": "Mentor Malta Hakkında",
-    "subtitle": "Bireylerin ve işletmelerin yapılandırılmış mentorlukla hedeflerine ulaşmalarına yardımcı oluyoruz.",
-    "mission": "Misyonumuz",
-    "missionText": "Malta ve uluslararası alanda insanların kişisel ve profesyonel olarak gelişmelerini sağlayan erişilebilir, yüksek kaliteli mentorluk sunmak.",
-    "values": "Değerlerimiz",
-    "value1": "Dürüstlük ve Güven",
-    "value2": "Mükemmellik",
-    "value3": "Kapsayıcılık"
+    "title": "Hakkımda",
+    "intro": "Malta'da yaşıyorum ve üç yıldır IT sektöründe aktif olarak çalışıyorum. Malta'da kariyer kurmak ve iş bulmak isteyen IT profesyonellerine mentorluk yapıyorum.",
+    "servicesTitle": "Hizmetler",
+    "service1": "CV iyileştirme",
+    "service2": "LinkedIn profil optimizasyonu",
+    "service3": "Mülakat hazırlığı",
+    "service4": "İş piyasası rehberliği",
+    "service5": "Taşınma tavsiyesi"
   },
   "packages": {
-    "title": "Paketlerimiz",
-    "subtitle": "Yolculuğunuz için doğru planı seçin.",
-    "perSession": "seans başına",
-    "bookNow": "Hemen Ayır",
-    "popular": "Popüler",
-    "feature1": "Bire bir seanslar",
-    "feature2": "Aksiyon planları ve takip",
-    "feature3": "E-posta desteği",
-    "feature4": "Öncelikli randevu"
+    "title": "Paketler",
+    "subtitle": "İhtiyacınıza uygun desteği seçin.",
+    "requestCta": "Danışmanlık Talebi",
+    "popular": "En Popüler",
+    "p1Name": "Keşif Görüşmesi",
+    "p1Price": "50 EUR",
+    "p1Features": ["30 dakikalık görüşme", "Malta yaşamı", "IT iş piyasası", "Yaşam koşulları", "Soru-cevap"],
+    "p2Name": "İş Arama Mentorluğu",
+    "p2Price": "200 EUR",
+    "p2Features": ["Haftalık rehberlik", "İş arama stratejisi", "CV ve LinkedIn optimizasyonu", "Mülakat hazırlığı", "İşe alım ve headhunter fırsatları", "Devam eden mentorluk desteği"],
+    "p3Name": "Premium Kariyer Desteği",
+    "p3Price": "450 EUR",
+    "p3Features": ["İş Arama Mentorluğundaki her şey", "Tam taşınma rehberliği", "Kişiselleştirilmiş iş hedefleme stratejisi", "Teklif değerlendirme desteği", "Maaş pazarlığı hazırlığı", "Öncelikli mentorluk erişimi"]
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Mentor Malta'dan içgörüler ve güncellemeler.",
+    "subtitle": "Malta'da IT iş piyasası ve yaşam üzerine içgörüler.",
     "readMore": "Devamını oku",
     "backToBlog": "Bloga Dön",
-    "publishedOn": "Yayın tarihi",
-    "noPosts": "Henüz yazı yok. Yakında tekrar bakın."
-  },
-  "testimonials": {
-    "title": "Referanslar",
-    "subtitle": "Müşterilerimiz bizim hakkımızda ne söylüyor."
-  },
-  "book": {
-    "title": "Görüşme Ayır",
-    "subtitle": "Size uyan bir zaman seçin. Gerisini biz hallederiz."
+    "publishedOn": "Yayın tarihi"
   },
   "contact": {
-    "title": "Bize Ulaşın",
-    "subtitle": "Mesaj gönderin, en kısa sürede size dönüş yapalım.",
+    "title": "İletişim",
+    "subtitle": "Danışmanlık talebi veya bilgi için yazın.",
     "name": "Ad Soyad",
     "email": "E-posta",
-    "subject": "Konu",
     "message": "Mesajınız",
+    "package": "İlgilendiğiniz Paket",
+    "packagePlaceholder": "Paket seçin",
     "send": "Gönder",
-    "success": "Teşekkürler! Mesajınız iletildi.",
-    "error": "Bir hata oluştu. Lütfen tekrar deneyin."
-  },
-  "newsletter": {
-    "title": "Güncel kalın",
-    "placeholder": "E-posta adresiniz",
-    "subscribe": "Abone Ol",
-    "success": "Abone olduğunuz için teşekkürler!",
-    "error": "Abonelik başarısız. Tekrar deneyin."
+    "success": "Teşekkürler. En kısa sürede sizinle iletişime geçeceğiz.",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin veya doğrudan e-posta gönderin.",
+    "directEmail": "Doğrudan iletişim için",
+    "contactEmail": "info@maltamentor.com"
   },
   "footer": {
-    "tagline": "Mentor Malta — Gelişimde ortağınız.",
+    "tagline": "Malta'da IT profesyonellerinin kariyer kurmasına yardımcı oluyoruz.",
     "links": "Hızlı Bağlantılar",
     "legal": "Yasal",
     "privacy": "Gizlilik Politikası",

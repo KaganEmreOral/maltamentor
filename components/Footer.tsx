@@ -2,8 +2,6 @@
 
 import { useTranslations } from 'next-intl';
 import { LocaleLink } from './LocaleLink';
-import { NewsletterForm } from './NewsletterForm';
-
 export function Footer() {
   const t = useTranslations('footer');
   const tNav = useTranslations('nav');
@@ -19,9 +17,6 @@ export function Footer() {
               Mentor Malta
             </LocaleLink>
             <p className="mt-2 text-sm text-gray-600">{t('tagline')}</p>
-            <div className="mt-6">
-              <NewsletterForm />
-            </div>
           </div>
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-900">{t('links')}</h3>
@@ -39,16 +34,6 @@ export function Footer() {
               <li>
                 <LocaleLink href="/blog" className="text-sm text-gray-600 hover:text-malta-red">
                   {tNav('blog')}
-                </LocaleLink>
-              </li>
-              <li>
-                <LocaleLink href="/testimonials" className="text-sm text-gray-600 hover:text-malta-red">
-                  {tNav('testimonials')}
-                </LocaleLink>
-              </li>
-              <li>
-                <LocaleLink href="/book" className="text-sm text-gray-600 hover:text-malta-red">
-                  {tNav('bookMeeting')}
                 </LocaleLink>
               </li>
               <li>

@@ -11,8 +11,6 @@ const navLinks = [
   { key: 'about', href: '/about' },
   { key: 'packages', href: '/packages' },
   { key: 'blog', href: '/blog' },
-  { key: 'testimonials', href: '/testimonials' },
-  { key: 'bookMeeting', href: '/book' },
   { key: 'contact', href: '/contact' },
 ] as const;
 

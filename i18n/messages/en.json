@@ -4,82 +4,64 @@
     "about": "About",
     "packages": "Packages",
     "blog": "Blog",
-    "testimonials": "Testimonials",
-    "bookMeeting": "Book a Meeting",
     "contact": "Contact"
   },
   "home": {
-    "heroTitle": "Mentor Malta",
-    "heroSubtitle": "Expert mentoring for your success in Malta and beyond.",
-    "heroCta": "Book a Meeting",
-    "heroSecondary": "Our Packages",
-    "featuresTitle": "Why Choose Us",
-    "features": {
-      "one": "Experienced mentors with proven track records",
-      "two": "Tailored programs for individuals and businesses",
-      "three": "Flexible sessions in English and Turkish"
-    },
-    "ctaTitle": "Ready to get started?",
-    "ctaText": "Schedule a free introductory call.",
-    "ctaButton": "Book a Meeting"
+    "heroTitle": "Helping IT Professionals Build Careers in Malta",
+    "heroCta": "Request a Consultation",
+    "introTitle": "Mentoring for IT Professionals Relocating to Malta",
+    "introText": "Whether you are considering a move to Malta or already here, I offer practical mentoring focused on the local IT job market: from CV and LinkedIn optimisation to interview preparation and relocation advice. My goal is to help you land a role that fits your skills and ambitions.",
+    "ctaTitle": "Ready to take the next step?",
+    "ctaButton": "Request a Consultation"
   },
   "about": {
-    "title": "About Mentor Malta",
-    "subtitle": "We help individuals and businesses achieve their goals through structured mentoring.",
-    "mission": "Our Mission",
-    "missionText": "To provide accessible, high-quality mentoring that empowers people to grow personally and professionally in Malta and internationally.",
-    "values": "Our Values",
-    "value1": "Integrity & Trust",
-    "value2": "Excellence",
-    "value3": "Inclusivity"
+    "title": "About",
+    "intro": "I live in Malta and have been working actively in the IT sector for three years. I mentor IT professionals who want to build their careers and find jobs in Malta.",
+    "servicesTitle": "Services include",
+    "service1": "CV improvement",
+    "service2": "LinkedIn profile optimisation",
+    "service3": "Interview preparation",
+    "service4": "Job market guidance",
+    "service5": "Relocation advice"
   },
   "packages": {
-    "title": "Our Packages",
-    "subtitle": "Choose the right plan for your journey.",
-    "perSession": "per session",
-    "bookNow": "Book Now",
-    "popular": "Popular",
-    "feature1": "One-on-one sessions",
-    "feature2": "Action plans & follow-up",
-    "feature3": "Email support",
-    "feature4": "Priority scheduling"
+    "title": "Packages",
+    "subtitle": "Choose the support that fits your needs.",
+    "requestCta": "Request Consultation",
+    "popular": "Most Popular",
+    "p1Name": "Discovery Session",
+    "p1Price": "50 EUR",
+    "p1Features": ["30 minute consultation", "Malta life", "IT job market", "Living conditions", "Q&A session"],
+    "p2Name": "Job Search Mentorship",
+    "p2Price": "200 EUR",
+    "p2Features": ["Weekly guidance", "Job search strategy", "CV and LinkedIn optimisation", "Interview preparation", "Sharing recruiter and headhunter opportunities", "Ongoing mentoring support"],
+    "p3Name": "Premium Career Support",
+    "p3Price": "450 EUR",
+    "p3Features": ["Everything in Job Search Mentorship", "Full relocation guidance", "Personalised job targeting strategy", "Offer evaluation support", "Salary negotiation preparation", "Priority mentoring access"]
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Insights and updates from Mentor Malta.",
+    "subtitle": "Insights on the IT job market and life in Malta.",
     "readMore": "Read more",
     "backToBlog": "Back to Blog",
-    "publishedOn": "Published on",
-    "noPosts": "No posts yet. Check back soon."
-  },
-  "testimonials": {
-    "title": "Testimonials",
-    "subtitle": "What our clients say about us."
-  },
-  "book": {
-    "title": "Book a Meeting",
-    "subtitle": "Select a time that works for you. We'll take it from there."
+    "publishedOn": "Published on"
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "Send us a message and we'll get back to you soon.",
+    "title": "Contact",
+    "subtitle": "Request a consultation or get in touch.",
     "name": "Name",
     "email": "Email",
-    "subject": "Subject",
     "message": "Message",
-    "send": "Send Message",
-    "success": "Thank you! Your message has been sent.",
-    "error": "Something went wrong. Please try again."
-  },
-  "newsletter": {
-    "title": "Stay in the loop",
-    "placeholder": "Your email address",
-    "subscribe": "Subscribe",
-    "success": "Thanks for subscribing!",
-    "error": "Subscription failed. Try again."
+    "package": "Interested Package",
+    "packagePlaceholder": "Select a package",
+    "send": "Submit",
+    "success": "Thank you. We will contact you shortly.",
+    "error": "Something went wrong. Please try again or email us directly.",
+    "directEmail": "You can also contact us directly at",
+    "contactEmail": "info@maltamentor.com"
   },
   "footer": {
-    "tagline": "Mentor Malta — Your partner in growth.",
+    "tagline": "Helping IT professionals build careers in Malta.",
     "links": "Quick Links",
     "legal": "Legal",
     "privacy": "Privacy Policy",

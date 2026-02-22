@@ -3,9 +3,15 @@
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
-type Props = { className?: string };
+const PACKAGE_OPTIONS = [
+  'Discovery Session (50 EUR)',
+  'Job Search Mentorship (200 EUR)',
+  'Premium Career Support (450 EUR)',
+];
 
-export function ContactForm({ className = '' }: Props) {
+type Props = { className?: string; packageOptions?: string[] };
+
+export function ContactForm({ className = '', packageOptions = PACKAGE_OPTIONS }: Props) {
   const t = useTranslations('contact');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
@@ -21,8 +27,8 @@ export function ContactForm({ className = '' }: Props) {
         body: JSON.stringify({
           name: data.get('name'),
           email: data.get('email'),
-          subject: data.get('subject'),
           message: data.get('message'),
+          package: data.get('package') || 'Not specified',
         }),
       });
       if (res.ok) {
@@ -62,15 +68,21 @@ export function ContactForm({ className = '' }: Props) {
           />
         </div>
         <div>
-          <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
-            {t('subject')}
+          <label htmlFor="package" className="block text-sm font-medium text-gray-700">
+            {t('package')}
           </label>
-          <input
-            id="subject"
-            name="subject"
-            type="text"
+          <select
+            id="package"
+            name="package"
             className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-malta-red focus:outline-none focus:ring-1 focus:ring-malta-red"
-          />
+          >
+            <option value="">{t('packagePlaceholder')}</option>
+            {packageOptions.map((opt) => (
+              <option key={opt} value={opt}>
+                {opt}
+              </option>
+            ))}
+          </select>
         </div>
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700">
@@ -85,8 +97,14 @@ export function ContactForm({ className = '' }: Props) {
           />
         </div>
       </div>
-      {status === 'success' && <p className="mt-2 text-sm text-green-600">{t('success')}</p>}
-      {status === 'error' && <p className="mt-2 text-sm text-red-600">{t('error')}</p>}
+      {status === 'success' && (
+        <p className="mt-4 rounded-md bg-green-50 p-3 text-sm font-medium text-green-800" role="status">
+          {t('success')}
+        </p>
+      )}
+      {status === 'error' && (
+        <p className="mt-4 rounded-md bg-red-50 p-3 text-sm text-red-700">{t('error')}</p>
+      )}
       <button
         type="submit"
         disabled={status === 'loading'}

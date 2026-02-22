@@ -43,3 +43,6 @@ coverage
 
 # Sanity
 .sanity
+
+# Contact form log (server-side storage)
+data/

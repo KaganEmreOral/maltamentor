@@ -19,11 +19,9 @@ export default async function PackagesPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations('packages');
 
-  const packages = [
-    { name: 'Starter', price: 75, popular: false },
-    { name: 'Growth', price: 120, popular: true },
-    { name: 'Premium', price: 180, popular: false },
-  ];
+  const p1Features = t.raw('p1Features') as string[];
+  const p2Features = t.raw('p2Features') as string[];
+  const p3Features = t.raw('p3Features') as string[];
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
@@ -33,41 +31,56 @@ export default async function PackagesPage({ params }: Props) {
       </div>
 
       <div className="mt-12 grid gap-8 lg:grid-cols-3">
-        {packages.map((pkg) => (
-          <div
-            key={pkg.name}
-            className={`relative rounded-xl border bg-white p-6 shadow-sm ${
-              pkg.popular ? 'border-malta-red ring-2 ring-malta-red' : 'border-gray-200'
-            }`}
+        <div className="relative rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+          <h3 className="text-lg font-semibold text-gray-900">{t('p1Name')}</h3>
+          <p className="mt-2 text-2xl font-bold text-gray-900">{t('p1Price')}</p>
+          <ul className="mt-6 space-y-2 text-sm text-gray-600">
+            {p1Features.map((f) => (
+              <li key={f}>✓ {f}</li>
+            ))}
+          </ul>
+          <Link
+            href={localeHref(locale, '/contact')}
+            className="mt-6 block w-full rounded-md border border-gray-300 bg-white py-2.5 text-center text-sm font-medium text-gray-700 hover:bg-gray-50"
           >
-            {pkg.popular && (
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-malta-red px-3 py-0.5 text-xs font-medium text-white">
-                {t('popular')}
-              </span>
-            )}
-            <h3 className="text-lg font-semibold text-gray-900">{pkg.name}</h3>
-            <p className="mt-2">
-              <span className="text-3xl font-bold text-gray-900">€{pkg.price}</span>
-              <span className="text-gray-500"> {t('perSession')}</span>
-            </p>
-            <ul className="mt-6 space-y-2 text-sm text-gray-600">
-              <li>✓ {t('feature1')}</li>
-              <li>✓ {t('feature2')}</li>
-              <li>✓ {t('feature3')}</li>
-              {pkg.popular && <li>✓ {t('feature4')}</li>}
-            </ul>
-            <Link
-              href={localeHref(locale, '/book')}
-              className={`mt-6 block w-full rounded-md py-2.5 text-center text-sm font-medium ${
-                pkg.popular
-                  ? 'bg-malta-red text-white hover:bg-malta-red-600'
-                  : 'border border-gray-300 text-gray-700 hover:bg-gray-50'
-              }`}
-            >
-              {t('bookNow')}
-            </Link>
-          </div>
-        ))}
+            {t('requestCta')}
+          </Link>
+        </div>
+
+        <div className="relative rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+          <h3 className="text-lg font-semibold text-gray-900">{t('p2Name')}</h3>
+          <p className="mt-2 text-2xl font-bold text-gray-900">{t('p2Price')}</p>
+          <ul className="mt-6 space-y-2 text-sm text-gray-600">
+            {p2Features.map((f) => (
+              <li key={f}>✓ {f}</li>
+            ))}
+          </ul>
+          <Link
+            href={localeHref(locale, '/contact')}
+            className="mt-6 block w-full rounded-md border border-gray-300 bg-white py-2.5 text-center text-sm font-medium text-gray-700 hover:bg-gray-50"
+          >
+            {t('requestCta')}
+          </Link>
+        </div>
+
+        <div className="relative rounded-xl border-2 border-malta-red bg-white p-6 shadow-sm ring-2 ring-malta-red">
+          <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-malta-red px-3 py-0.5 text-xs font-medium text-white">
+            {t('popular')}
+          </span>
+          <h3 className="text-lg font-semibold text-gray-900">{t('p3Name')}</h3>
+          <p className="mt-2 text-2xl font-bold text-gray-900">{t('p3Price')}</p>
+          <ul className="mt-6 space-y-2 text-sm text-gray-600">
+            {p3Features.map((f) => (
+              <li key={f}>✓ {f}</li>
+            ))}
+          </ul>
+          <Link
+            href={localeHref(locale, '/contact')}
+            className="mt-6 block w-full rounded-md bg-malta-red py-2.5 text-center text-sm font-medium text-white hover:bg-malta-red-600"
+          >
+            {t('requestCta')}
+          </Link>
+        </div>
       </div>
     </div>
   );

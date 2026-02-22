@@ -1,6 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
+import Image from 'next/image';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -15,68 +16,40 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-white">
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-              {t('heroTitle')}
-            </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-              {t('heroSubtitle')}
-            </p>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href={localeHref(locale, '/book')}
-                className="rounded-md bg-malta-red px-6 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-malta-red-600"
-              >
-                {t('heroCta')}
-              </Link>
-              <Link
-                href={localeHref(locale, '/packages')}
-                className="rounded-md border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 transition-colors hover:bg-gray-50"
-              >
-                {t('heroSecondary')}
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-gray-200 bg-gray-50 py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-2xl font-semibold text-gray-900 sm:text-3xl">
-            {t('featuresTitle')}
-          </h2>
-          <ul className="mt-12 grid gap-8 sm:grid-cols-3">
-            <li className="rounded-lg bg-white p-6 shadow-sm">
-              <div className="h-10 w-10 rounded-md bg-malta-red/10 flex items-center justify-center">
-                <span className="text-malta-red text-lg font-bold">1</span>
-              </div>
-              <p className="mt-4 text-gray-600">{t('features.one')}</p>
-            </li>
-            <li className="rounded-lg bg-white p-6 shadow-sm">
-              <div className="h-10 w-10 rounded-md bg-malta-red/10 flex items-center justify-center">
-                <span className="text-malta-red text-lg font-bold">2</span>
-              </div>
-              <p className="mt-4 text-gray-600">{t('features.two')}</p>
-            </li>
-            <li className="rounded-lg bg-white p-6 shadow-sm">
-              <div className="h-10 w-10 rounded-md bg-malta-red/10 flex items-center justify-center">
-                <span className="text-malta-red text-lg font-bold">3</span>
-              </div>
-              <p className="mt-4 text-gray-600">{t('features.three')}</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section className="py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 text-center sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">{t('ctaTitle')}</h2>
-          <p className="mt-2 text-gray-600">{t('ctaText')}</p>
+      <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden bg-gray-900">
+        <Image
+          src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=2070&q=80"
+          alt=""
+          fill
+          className="object-cover opacity-60"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 mx-auto max-w-4xl px-4 text-center text-white">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+            {t('heroTitle')}
+          </h1>
           <Link
-            href={localeHref(locale, '/book')}
-            className="mt-6 inline-block rounded-md bg-malta-red px-6 py-3 text-base font-medium text-white hover:bg-malta-red-600"
+            href={localeHref(locale, '/contact')}
+            className="mt-10 inline-block rounded-md bg-malta-red px-8 py-4 text-lg font-medium text-white shadow-lg transition-colors hover:bg-malta-red-600"
+          >
+            {t('heroCta')}
+          </Link>
+        </div>
+      </section>
+
+      <section className="border-t border-gray-200 bg-white py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
+            {t('introTitle')}
+          </h2>
+          <p className="mt-6 text-lg leading-relaxed text-gray-600">
+            {t('introText')}
+          </p>
+          <Link
+            href={localeHref(locale, '/contact')}
+            className="mt-10 inline-block rounded-md bg-malta-red px-8 py-3 text-base font-medium text-white hover:bg-malta-red-600"
           >
             {t('ctaButton')}
           </Link>

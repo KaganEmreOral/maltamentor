@@ -1,6 +1,6 @@
 # Mentor Malta
 
-Production-ready multilingual (EN/TR) website for Mentor Malta — corporate mentoring, packages, blog, and contact.
+Production-ready multilingual (EN/TR) website — IT career mentoring in Malta. Contact form sends email via Nodemailer and saves submissions server-side.
 
 ## Stack
 
@@ -8,27 +8,25 @@ Production-ready multilingual (EN/TR) website for Mentor Malta — corporate men
 - **TypeScript**
 - **Tailwind CSS**
 - **next-intl** (English + Turkish)
-- **Sanity CMS** (optional, blog ready)
+- **Nodemailer** (contact form email)
+- **Sanity CMS** (optional, blog)
 - **SEO**: metadata, sitemap, robots.txt, Open Graph
 - **Responsive**, red & white branding
 
 ## Install
 
 ```bash
-cd mentormalta
 npm install
 ```
 
 ## Environment
 
-Copy env example and set variables:
-
 ```bash
 cp .env.example .env
-# Edit .env with your values (site URL, Sanity, Resend, Calendly)
+# Edit .env: NEXT_PUBLIC_SITE_URL, CONTACT_RECEIVER_EMAIL, EMAIL_HOST, EMAIL_PORT, EMAIL_USER, EMAIL_PASS
 ```
 
-See [.env.example](.env.example) for all options.
+See [.env.example](.env.example) and [NODEMAILER_SETUP.md](NODEMAILER_SETUP.md) for SMTP and contact email setup.
 
 ## Run locally
 
@@ -138,29 +136,27 @@ pm2 startup
 
 ## Pages
 
-| Page        | Path         | Notes                    |
-|------------|--------------|--------------------------|
-| Home       | `/`          | Hero, features, CTA      |
-| About      | `/about`     | Mission & values         |
-| Packages   | `/packages`  | Pricing cards            |
-| Blog       | `/blog`      | Sanity-powered list      |
-| Blog post  | `/blog/[slug]` | Sanity-powered post   |
-| Testimonials | `/testimonials` | Static list          |
-| Book a Meeting | `/book`   | Calendly iframe          |
-| Contact    | `/contact`   | Form → API → email       |
-| Privacy    | `/privacy`   | Placeholder              |
-| Terms      | `/terms`     | Placeholder              |
+| Page      | Path           | Notes                              |
+|-----------|----------------|------------------------------------|
+| Home      | `/`            | Full-screen hero, CTA → Contact    |
+| About     | `/about`       | Intro, services, profile placeholder |
+| Packages  | `/packages`    | 3 packages, CTAs → Contact         |
+| Blog      | `/blog`        | Listing + sample article           |
+| Blog post | `/blog/[slug]` | Sample IT Malta article + Sanity  |
+| Contact   | `/contact`     | Form (name, email, package, message) → email + log |
+| Privacy   | `/privacy`     | Placeholder                        |
+| Terms     | `/terms`       | Placeholder                        |
 
-Navbar includes **language switcher (EN/TR)**. Footer includes **newsletter** form.
+`/book` and `/testimonials` redirect to `/contact`. Navbar: **Home, About, Packages, Blog, Contact** and **language switcher (EN/TR)**.
 
-## Sanity CMS
+## Contact form
 
-Set `NEXT_PUBLIC_SANITY_PROJECT_ID` and dataset in `.env`. Blog list and post pages use `lib/sanity.ts`. Add a `post` type in Sanity with: `title`, `slug`, `excerpt`, `mainImage`, `publishedAt`, `body` (portable text). Image optimization is enabled for `cdn.sanity.io` in `next.config.js`.
+- **POST /api/contact** — Body: `name`, `email`, `message`, `package` (optional). Sends email via **Nodemailer** to `CONTACT_RECEIVER_EMAIL` and appends to `data/contact-messages.log` and `data/contact-messages.json`.
+- See [NODEMAILER_SETUP.md](NODEMAILER_SETUP.md) for SMTP configuration and [.env.example](.env.example) for required variables.
 
-## Contact form & newsletter
+## Sanity CMS (optional)
 
-- **Contact**: `POST /api/contact` — expects `name`, `email`, `subject`, `message`. Uses Resend; set `RESEND_API_KEY` and `CONTACT_EMAIL` (or `EMAIL_TO`).
-- **Newsletter**: `POST /api/newsletter` — expects `email`. Optional `RESEND_AUDIENCE_ID` for Resend audience.
+Set `NEXT_PUBLIC_SANITY_PROJECT_ID` and dataset in `.env`. Blog can list posts from Sanity in addition to the static sample article. Image optimization is enabled for `cdn.sanity.io` in `next.config.js`.
 
 ## SEO
 
