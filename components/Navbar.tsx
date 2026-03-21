@@ -1,10 +1,9 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { LocaleLink } from './LocaleLink';
-import Link from 'next/link';
+import { Link, usePathname } from '@/i18n/navigation';
 
 const navLinks = [
   { key: 'home', href: '/' },
@@ -14,19 +13,15 @@ const navLinks = [
   { key: 'contact', href: '/contact' },
 ] as const;
 
-const defaultLocale = 'en';
-
 export function Navbar() {
   const t = useTranslations('nav');
-  const fullPathname = usePathname();
+  const pathname = usePathname();
   const locale = useLocale();
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const pathWithoutLocale = locale === defaultLocale ? fullPathname : fullPathname?.replace(/^\/tr/, '') || '/';
-  const pathForActive = pathWithoutLocale || '/';
+  const pathForActive = pathname || '/';
 
   const switchLocale = locale === 'en' ? 'tr' : 'en';
-  const switchHref = switchLocale === 'en' ? pathWithoutLocale || '/' : `/${switchLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
   const switchLabel = locale === 'en' ? 'TR' : 'EN';
 
   return (
@@ -52,7 +47,8 @@ export function Navbar() {
             );
           })}
           <Link
-            href={switchHref}
+            href={pathname}
+            locale={switchLocale}
             className="rounded-md border border-malta-red bg-malta-red px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-malta-red-600"
           >
             {switchLabel}
@@ -89,7 +85,8 @@ export function Navbar() {
               </LocaleLink>
             ))}
             <Link
-              href={switchHref}
+              href={pathname}
+              locale={switchLocale}
               className="mt-2 rounded-md bg-malta-red px-3 py-2 text-center text-sm font-medium text-white"
               onClick={() => setMobileOpen(false)}
             >

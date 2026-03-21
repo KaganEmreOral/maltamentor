@@ -59,9 +59,7 @@
     "packagePlaceholder": "Select a package",
     "send": "Submit",
     "success": "Thank you. We will contact you shortly.",
-    "error": "Something went wrong. Please try again or email us directly.",
-    "directEmail": "You can also contact us directly at",
-    "contactEmail": "kaganemreoral@gmail.com"
+    "error": "Something went wrong. Please try again in a moment."
   },
   "footer": {
     "tagline": "Helping IT professionals build careers in Malta.",

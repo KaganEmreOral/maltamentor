@@ -4,6 +4,8 @@ export type StaticPost = {
   excerpt: string;
   publishedAt: string;
   locale: string;
+  /** Unsplash (or same-origin) thumbnail for blog cards */
+  thumbnailUrl: string;
 };
 
 export const STATIC_SLUGS = [
@@ -20,6 +22,8 @@ const postsEn: StaticPost[] = [
       'Malta offers a growing tech scene with demand for developers and DevOps engineers, competitive salaries, and a favourable environment for relocation.',
     publishedAt: '2024-01-15',
     locale: 'en',
+    thumbnailUrl:
+      'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop',
   },
   {
     slug: 'cost-of-living-malta-it',
@@ -28,6 +32,8 @@ const postsEn: StaticPost[] = [
       'Rent, utilities, transport, and daily costs in Malta—practical numbers and tips so you can plan your move with confidence.',
     publishedAt: '2024-02-01',
     locale: 'en',
+    thumbnailUrl:
+      'https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=800&auto=format&fit=crop',
   },
   {
     slug: 'weekends-culture-malta',
@@ -36,6 +42,8 @@ const postsEn: StaticPost[] = [
       'How English fits into daily life, local customs, and ways to enjoy Malta outside work—from Valletta to the coast.',
     publishedAt: '2024-02-10',
     locale: 'en',
+    thumbnailUrl:
+      'https://images.unsplash.com/photo-1539650116454-2920d5b0e6e9?q=80&w=800&auto=format&fit=crop',
   },
 ];
 
@@ -47,6 +55,8 @@ const postsTr: StaticPost[] = [
       'Malta, geliştiricilere ve DevOps mühendislerine olan talebi, rekabetçi maaşları ve taşınma için elverişli ortamıyla büyüyen bir teknoloji sahnesi sunuyor.',
     publishedAt: '2024-01-15',
     locale: 'tr',
+    thumbnailUrl:
+      'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop',
   },
   {
     slug: 'cost-of-living-malta-it',
@@ -55,6 +65,8 @@ const postsTr: StaticPost[] = [
       'Kira, faturalar, ulaşım ve günlük harcamalar—taşınmayı planlarken işinize yarayacak pratik bilgiler.',
     publishedAt: '2024-02-01',
     locale: 'tr',
+    thumbnailUrl:
+      'https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=800&auto=format&fit=crop',
   },
   {
     slug: 'weekends-culture-malta',
@@ -63,6 +75,8 @@ const postsTr: StaticPost[] = [
       'Günlük hayatta İngilizce, yerel adetler ve iş dışında Malta’nın keyfini çıkarmanın yolları—Valletta’dan kıyılara.',
     publishedAt: '2024-02-10',
     locale: 'tr',
+    thumbnailUrl:
+      'https://images.unsplash.com/photo-1539650116454-2920d5b0e6e9?q=80&w=800&auto=format&fit=crop',
   },
 ];
 

@@ -1,7 +1,6 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
-import Image from 'next/image';
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -16,16 +15,14 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
-      <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden bg-gray-900">
-        <Image
-          src="https://images.unsplash.com/photo-1564594985643-442a6e6e7e0d?auto=format&fit=crop&w=2070&q=80"
-          alt="Valletta, Malta"
-          fill
-          className="object-cover opacity-60"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-black/40" />
+      <section
+        className="relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden bg-gray-900 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.45)), url(https://images.unsplash.com/photo-1596484552994-0ae9c2bc33f4?q=80&w=2400&auto=format&fit=crop)',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/25" aria-hidden />
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center text-white">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
             {t('heroTitle')}

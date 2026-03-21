@@ -39,7 +39,15 @@ export default async function BlogPage({ params }: Props) {
               href={localeHref(locale, `/blog/${post.slug}`)}
               className="block overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-shadow hover:shadow-md"
             >
-              <div className="relative h-48 bg-gray-100" />
+              <div className="relative h-48 bg-gray-100">
+                <Image
+                  src={post.thumbnailUrl}
+                  alt=""
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
               <div className="p-4">
                 <h2 className="font-semibold text-gray-900">{post.title}</h2>
                 <p className="mt-1 text-sm text-gray-500 line-clamp-2">{post.excerpt}</p>

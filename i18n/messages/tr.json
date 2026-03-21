@@ -59,9 +59,7 @@
     "packagePlaceholder": "Paket seçin",
     "send": "Gönder",
     "success": "Teşekkürler. En kısa sürede sizinle iletişime geçeceğiz.",
-    "error": "Bir hata oluştu. Lütfen tekrar deneyin veya doğrudan e-posta gönderin.",
-    "directEmail": "Doğrudan iletişim için",
-    "contactEmail": "kaganemreoral@gmail.com"
+    "error": "Bir hata oluştu. Lütfen bir süre sonra tekrar deneyin."
   },
   "footer": {
     "tagline": "Malta'da IT profesyonellerinin kariyer kurmasına yardımcı oluyoruz.",

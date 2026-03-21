@@ -22,15 +22,6 @@ export default async function ContactPage({ params }: Props) {
         <p className="mt-4 text-lg text-gray-600">{t('subtitle')}</p>
       </div>
       <ContactForm className="mt-10" />
-      <p className="mt-8 text-center text-sm text-gray-600">
-        {t('directEmail')}{' '}
-        <a
-          href={`mailto:${t('contactEmail')}`}
-          className="font-medium text-malta-red hover:underline"
-        >
-          {t('contactEmail')}
-        </a>
-      </p>
     </div>
   );
 }
