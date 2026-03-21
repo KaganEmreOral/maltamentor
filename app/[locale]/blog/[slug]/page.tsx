@@ -2,11 +2,11 @@ import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import { getPostBySlug, getPosts } from '@/lib/sanity';
-import { getStaticPostBySlug, SAMPLE_POST_SLUG } from '@/lib/static-posts';
+import { getStaticPostBySlug, STATIC_SLUGS } from '@/lib/static-posts';
 import Image from 'next/image';
 import { urlFor } from '@/lib/sanity';
 import { notFound } from 'next/navigation';
-import { SampleArticleContent } from '@/components/SampleArticleContent';
+import { BlogArticleBody } from '@/components/BlogArticleBody';
 
 function localeHref(locale: string, path: string) {
   return locale === 'en' ? path : `/${locale}${path}`;
@@ -17,7 +17,9 @@ type Props = { params: Promise<{ locale: string; slug: string }> };
 export async function generateStaticParams() {
   const sanityPosts = await getPosts('en', 50);
   const slugs = sanityPosts.map((p) => ({ slug: p.slug }));
-  slugs.push({ slug: SAMPLE_POST_SLUG });
+  for (const s of STATIC_SLUGS) {
+    if (!slugs.some((x) => x.slug === s)) slugs.push({ slug: s });
+  }
   return slugs;
 }
 
@@ -47,7 +49,7 @@ export default async function BlogPostPage({ params }: Props) {
         <p className="mt-2 text-sm text-gray-500">
           {t('publishedOn')} {new Date(staticPost.publishedAt).toLocaleDateString(locale)}
         </p>
-        <SampleArticleContent locale={locale} />
+        <BlogArticleBody locale={locale} slug={slug} />
       </article>
     );
   }

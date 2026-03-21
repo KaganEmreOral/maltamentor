@@ -6,7 +6,6 @@ import { useState } from 'react';
 const PACKAGE_OPTIONS = [
   'Discovery Session (50 EUR)',
   'Job Search Mentorship (200 EUR)',
-  'Premium Career Support (450 EUR)',
 ];
 
 type Props = { className?: string; packageOptions?: string[] };

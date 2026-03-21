@@ -16,7 +16,13 @@
   },
   "about": {
     "title": "Hakkımda",
-    "intro": "Malta'da yaşıyorum ve üç yıldır IT sektöründe aktif olarak çalışıyorum. Malta'da kariyer kurmak ve iş bulmak isteyen IT profesyonellerine mentorluk yapıyorum.",
+    "introShort": "Malta'da SRE / DevOps mühendisi; burada kariyer kurmak isteyen IT profesyonellerine mentorluk.",
+    "story": [
+      "Üç yıldır Malta'da yaşıyorum. SRE / DevOps mühendisi olarak çalışıyorum; hızlı değişen ortamlarda güvenilir kalmaları gereken sistemleri ve platformları destekliyorum.",
+      "Bu süreçte farklı sektörlerde ve rollerde deneyim kazandım—girişimlerden daha kurumsal yapılara kadar. Bu çeşitlilik, ekiplerin nasıl işe alım yaptığını, mülakatların nasıl yapılandığını ve Malta'daki işverenlerin bir CV'deki kelimelerin ötesinde gerçekten ne aradığını görmemi sağladı.",
+      "Burada iş bulmak veya kariyerinde bir sonraki adımı atmak isteyen IT profesyonellerine mentorluk yapıyorum. Amacım, ilk elden öğrendiklerimi paylaşmak: deneyiminizi net şekilde nasıl sunacağınız, teknik ve davranışsal mülakatlara nasıl hazırlanacağınız ve yerel iş piyasasını gerçekçi beklentilerle nasıl okuyacağınız.",
+      "Taşınmayı planlıyorsanız veya zaten adadasanız ve yapılandırılmış bir rehberlik istiyorsanız, netlik ve güvenle ilerlemenize yardımcı olmaktan memnuniyet duyarım."
+    ],
     "servicesTitle": "Hizmetler",
     "service1": "CV iyileştirme",
     "service2": "LinkedIn profil optimizasyonu",
@@ -34,10 +40,7 @@
     "p1Features": ["30 dakikalık görüşme", "Malta yaşamı", "IT iş piyasası", "Yaşam koşulları", "Soru-cevap"],
     "p2Name": "İş Arama Mentorluğu",
     "p2Price": "200 EUR",
-    "p2Features": ["Haftalık rehberlik", "İş arama stratejisi", "CV ve LinkedIn optimizasyonu", "Mülakat hazırlığı", "İşe alım ve headhunter fırsatları", "Devam eden mentorluk desteği"],
-    "p3Name": "Premium Kariyer Desteği",
-    "p3Price": "450 EUR",
-    "p3Features": ["İş Arama Mentorluğundaki her şey", "Tam taşınma rehberliği", "Kişiselleştirilmiş iş hedefleme stratejisi", "Teklif değerlendirme desteği", "Maaş pazarlığı hazırlığı", "Öncelikli mentorluk erişimi"]
+    "p2Features": ["Haftalık rehberlik", "İş arama stratejisi", "CV ve LinkedIn optimizasyonu", "Mülakat hazırlığı", "İşe alım ve headhunter fırsatları", "Devam eden mentorluk desteği"]
   },
   "blog": {
     "title": "Blog",
@@ -58,7 +61,7 @@
     "success": "Teşekkürler. En kısa sürede sizinle iletişime geçeceğiz.",
     "error": "Bir hata oluştu. Lütfen tekrar deneyin veya doğrudan e-posta gönderin.",
     "directEmail": "Doğrudan iletişim için",
-    "contactEmail": "info@maltamentor.com"
+    "contactEmail": "kaganemreoral@gmail.com"
   },
   "footer": {
     "tagline": "Malta'da IT profesyonellerinin kariyer kurmasına yardımcı oluyoruz.",

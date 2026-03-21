@@ -25,17 +25,19 @@ export async function POST(request: Request) {
       timestamp,
     };
 
-    logContactMessage(payload);
-
-    const sent = await sendContactEmail(payload);
-    if (!sent) {
-      return NextResponse.json(
-        { error: 'Failed to send email. Please try again or contact us directly.' },
-        { status: 500 }
-      );
+    try {
+      logContactMessage(payload);
+    } catch (logErr) {
+      console.error('Contact log failed:', logErr);
+      return NextResponse.json({ error: 'Could not save your message. Please try again.' }, { status: 500 });
     }
 
-    return NextResponse.json({ success: true });
+    const emailSent = await sendContactEmail(payload);
+
+    return NextResponse.json({
+      success: true,
+      emailSent,
+    });
   } catch (e) {
     console.error('Contact API error:', e);
     return NextResponse.json({ error: 'Server error' }, { status: 500 });

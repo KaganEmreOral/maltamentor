@@ -3,7 +3,18 @@ import { routing } from '@/i18n/routing';
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mentormalta.com';
 
 export default function sitemap() {
-  const paths = ['', '/about', '/packages', '/blog', '/contact', '/privacy', '/terms', '/blog/it-job-market-malta'];
+  const paths = [
+    '',
+    '/about',
+    '/packages',
+    '/blog',
+    '/contact',
+    '/privacy',
+    '/terms',
+    '/blog/it-job-market-malta',
+    '/blog/cost-of-living-malta-it',
+    '/blog/weekends-culture-malta',
+  ];
   const entries: { url: string; lastModified: string; changeFrequency: 'weekly' | 'daily' | 'monthly'; priority: number }[] = [];
 
   for (const locale of routing.locales) {

@@ -18,8 +18,8 @@ export default async function HomePage({ params }: Props) {
     <>
       <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden bg-gray-900">
         <Image
-          src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=2070&q=80"
-          alt=""
+          src="https://images.unsplash.com/photo-1564594985643-442a6e6e7e0d?auto=format&fit=crop&w=2070&q=80"
+          alt="Valletta, Malta"
           fill
           className="object-cover opacity-60"
           priority

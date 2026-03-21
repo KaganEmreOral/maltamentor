@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: Props) {
   const t = await getTranslations('about');
   return {
     title: t('title'),
-    description: t('intro'),
+    description: t('introShort'),
   };
 }
 
@@ -17,20 +17,16 @@ export default async function AboutPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations('about');
 
+  const paragraphs = t.raw('story') as string[];
   const services = [t('service1'), t('service2'), t('service3'), t('service4'), t('service5')];
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-      <div className="flex flex-col gap-10 md:flex-row md:items-start">
-        <div className="shrink-0">
-          <div className="h-48 w-48 rounded-xl bg-gray-200 flex items-center justify-center text-gray-400 text-sm">
-            Profile photo
-          </div>
-        </div>
-        <div>
-          <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">{t('title')}</h1>
-          <p className="mt-6 text-lg leading-relaxed text-gray-600">{t('intro')}</p>
-        </div>
+    <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+      <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">{t('title')}</h1>
+      <div className="mt-8 space-y-5 text-lg leading-relaxed text-gray-600">
+        {paragraphs.map((p, i) => (
+          <p key={i}>{p}</p>
+        ))}
       </div>
 
       <div className="mt-12 rounded-xl border border-gray-200 bg-gray-50 p-6 sm:p-8">

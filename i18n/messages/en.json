@@ -16,7 +16,13 @@
   },
   "about": {
     "title": "About",
-    "intro": "I live in Malta and have been working actively in the IT sector for three years. I mentor IT professionals who want to build their careers and find jobs in Malta.",
+    "introShort": "SRE and DevOps engineer in Malta, mentoring IT professionals who want to build their careers here.",
+    "story": [
+      "I have been living in Malta for three years. I work as an SRE / DevOps engineer, supporting systems and platforms that need to stay reliable in fast-moving environments.",
+      "Over that time I have worked in different sectors and roles—from startups to more established companies. That variety gave me exposure to how teams hire, how interviews are structured, and what employers in Malta actually look for beyond buzzwords on a CV.",
+      "I mentor IT professionals who want to find a job here or take the next step in their career. My aim is to share what I have learned first-hand: how to present your experience clearly, prepare for technical and behavioural interviews, and understand the local job market with realistic expectations.",
+      "If you are planning to relocate or are already on the island and want structured guidance, I would be glad to help you move forward with clarity and confidence."
+    ],
     "servicesTitle": "Services include",
     "service1": "CV improvement",
     "service2": "LinkedIn profile optimisation",
@@ -34,10 +40,7 @@
     "p1Features": ["30 minute consultation", "Malta life", "IT job market", "Living conditions", "Q&A session"],
     "p2Name": "Job Search Mentorship",
     "p2Price": "200 EUR",
-    "p2Features": ["Weekly guidance", "Job search strategy", "CV and LinkedIn optimisation", "Interview preparation", "Sharing recruiter and headhunter opportunities", "Ongoing mentoring support"],
-    "p3Name": "Premium Career Support",
-    "p3Price": "450 EUR",
-    "p3Features": ["Everything in Job Search Mentorship", "Full relocation guidance", "Personalised job targeting strategy", "Offer evaluation support", "Salary negotiation preparation", "Priority mentoring access"]
+    "p2Features": ["Weekly guidance", "Job search strategy", "CV and LinkedIn optimisation", "Interview preparation", "Sharing recruiter and headhunter opportunities", "Ongoing mentoring support"]
   },
   "blog": {
     "title": "Blog",
@@ -58,7 +61,7 @@
     "success": "Thank you. We will contact you shortly.",
     "error": "Something went wrong. Please try again or email us directly.",
     "directEmail": "You can also contact us directly at",
-    "contactEmail": "info@maltamentor.com"
+    "contactEmail": "kaganemreoral@gmail.com"
   },
   "footer": {
     "tagline": "Helping IT professionals build careers in Malta.",
