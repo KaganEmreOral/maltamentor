@@ -18,7 +18,9 @@ type Props = { children: React.ReactNode; params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const isEn = locale === 'en';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mentormalta.com';
   return {
+    metadataBase: new URL(siteUrl),
     title: {
       default: isEn ? 'Mentor Malta | Expert Mentoring' : 'Mentor Malta | Uzman Mentorluk',
       template: `%s | Mentor Malta`,

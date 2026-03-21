@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Mentor Malta">
+  <rect width="32" height="32" rx="6" fill="#CC0000"/>
+  <!-- Malta George Cross style: white cross on red -->
+  <path fill="#FFFFFF" d="M14 6h4v10h8v4h-8v10h-4v-10H6v-4h8V6z"/>
+</svg>

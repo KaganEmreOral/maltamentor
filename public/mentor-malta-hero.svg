@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0.06"/>
+    </linearGradient>
+  </defs>
+  <!-- Large cross watermark -->
+  <rect x="360" y="40" width="80" height="420" fill="url(#g)"/>
+  <rect x="120" y="220" width="560" height="80" fill="url(#g)"/>
+  <text
+    x="400"
+    y="460"
+    text-anchor="middle"
+    font-family="ui-sans-serif, system-ui, sans-serif"
+    font-weight="800"
+    font-size="56"
+    fill="#ffffff"
+    fill-opacity="0.11"
+  >Mentor Malta</text>
+</svg>
