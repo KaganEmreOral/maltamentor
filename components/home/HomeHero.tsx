@@ -2,8 +2,8 @@ import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { HomeButtonLink } from './HomeButtonLink';
 
-/** Local hero visual — see TODO below for final licensed photograph. */
-const HERO_IMAGE_SRC = '/images/malta-career-hero.svg';
+/** Valletta skyline illustration — /public/images/malta-career-hero.png */
+const HERO_IMAGE_SRC = '/images/malta-career-hero.png';
 
 export async function HomeHero() {
   const t = await getTranslations('home.hero');
@@ -25,16 +25,14 @@ export async function HomeHero() {
           <p className="mt-6 text-sm text-gray-500">{t('trustNote')}</p>
         </div>
 
-        {/* TODO: Replace with a properly licensed photograph at /images/malta-career-hero.jpg (Valletta harbour, skyline or urban Malta). */}
-        <div className="relative mx-auto aspect-[16/10] w-full max-w-xl overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 shadow-sm">
+        <div className="relative mx-auto aspect-[2/1] w-full max-w-xl overflow-hidden rounded-2xl border border-gray-200 bg-white p-2 shadow-sm sm:p-3">
           <Image
             src={HERO_IMAGE_SRC}
             alt={t('imageAlt')}
             fill
             priority
-            className="object-cover"
+            className="object-contain object-center"
             sizes="(max-width: 1024px) 100vw, 560px"
-            unoptimized
           />
         </div>
       </div>
