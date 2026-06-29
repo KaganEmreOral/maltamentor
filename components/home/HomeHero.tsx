@@ -2,9 +2,11 @@ import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { HomeButtonLink } from './HomeButtonLink';
 
+/** Local hero visual — see TODO below for final licensed photograph. */
+const HERO_IMAGE_SRC = '/images/malta-career-hero.svg';
+
 export async function HomeHero() {
   const t = await getTranslations('home.hero');
-  const tFounder = await getTranslations('home.founder');
 
   return (
     <section className="border-b border-gray-200 bg-white">
@@ -23,15 +25,16 @@ export async function HomeHero() {
           <p className="mt-6 text-sm text-gray-500">{t('trustNote')}</p>
         </div>
 
-        {/* TODO: Replace /founder-placeholder.svg with /founder.jpg when a real founder photo is available */}
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-gray-200 bg-gray-50 shadow-sm lg:max-w-md">
+        {/* TODO: Replace with a properly licensed photograph at /images/malta-career-hero.jpg (Valletta harbour, skyline or urban Malta). */}
+        <div className="relative mx-auto aspect-[16/10] w-full max-w-xl overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 shadow-sm">
           <Image
-            src="/founder-placeholder.svg"
-            alt={tFounder('photoAlt')}
+            src={HERO_IMAGE_SRC}
+            alt={t('imageAlt')}
             fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 80vw, 400px"
             priority
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 560px"
+            unoptimized
           />
         </div>
       </div>

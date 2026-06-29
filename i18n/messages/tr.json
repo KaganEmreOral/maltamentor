@@ -18,7 +18,8 @@
       "subtitle": "Malta’daki fırsatları değerlendiren uluslararası IT profesyonelleri için pratik kariyer ve taşınma rehberliği. CV stratejisi, mülakatlar, maaş beklentileri, kariyer konumlandırması ve Malta’ya taşınmanın gerçekleri hakkında destek alın.",
       "ctaPrimary": "Malta Kariyer Uygunluğunu Kontrol Et",
       "ctaSecondary": "Mentorluk Seçeneklerini İncele",
-      "trustNote": "Malta IT piyasasındaki gerçek deneyime dayalı pratik rehberlik."
+      "trustNote": "Malta IT piyasasındaki gerçek deneyime dayalı pratik rehberlik.",
+      "imageAlt": "Malta’daki kariyer ve taşınma fırsatlarını temsil eden Malta manzarası"
     },
     "whoFor": {
       "title": "Malta Mentor Sizin İçin Uygun mu?",
@@ -135,8 +136,18 @@
     "careerFit": {
       "title": "Hangi Aşamada Olduğunuzdan Emin Değil misiniz?",
       "text": "Kısa bir değerlendirmeyi tamamlayarak deneyiminizin, yeteneklerinizin, maaş beklentinizin ve taşınma durumunuzun Malta IT piyasasına ne kadar uygun olduğunu daha net görün.",
-      "cta": "Kariyer Uygunluğumu Kontrol Et",
-      "note": "Ücretsiz değerlendirme. İş veya vize garantisi verilmez."
+      "cta": "Ücretsiz Değerlendirmeyi Başlat",
+      "meta": "7 soru · Yaklaşık 2 dakika · Anında sonuç",
+      "note": "Ücretsiz değerlendirme. İş veya vize garantisi verilmez.",
+      "previewFactors": [
+        "Profesyonel deneyim",
+        "IT uzmanlık alanı",
+        "İngilizce hazırlığı",
+        "CV ve LinkedIn hazırlığı",
+        "Çalışma izni durumu",
+        "Maaş beklentileri",
+        "Taşınma hazırlığı"
+      ]
     },
     "resources": {
       "title": "Pratik Malta Kariyer Kaynakları",
@@ -235,18 +246,156 @@
   "careerFit": {
     "meta": {
       "title": "Malta Kariyer Uygunluğu",
-      "description": "Profilinizin Malta IT piyasasına ne kadar uyduğunu anlamak için ücretsiz başlangıç kontrolü. İş veya vize garantisi yoktur."
+      "description": "Malta’yı değerlendiren uluslararası IT profesyonelleri için ücretsiz 7 soruluk hazırlık kontrolü. İş veya vize garantisi yoktur."
     },
     "title": "Malta Kariyer Uygunluğu",
-    "subtitle": "Malta taşınmanıza zaman ve para yatırmadan önce daha net bir başlangıç noktası edinin.",
-    "intro": "Tam etkileşimli değerlendirme yakında hazır olacak. Şimdilik e-postanızı bırakın—hazır olduğunda sizi bilgilendirelim. Durumunuzu hemen konuşmak isterseniz doğrudan iletişime geçebilirsiniz.",
+    "subtitle": "7 kısa soruyu yanıtlayın ve Malta’daki IT fırsatlarını keşfetmeye ne kadar hazır olduğunuza dair anında bir gösterge alın.",
+    "intro": "Bu eğitim amaçlı bir öz değerlendirmedir—işe alım, göçmenlik veya hukuki karar değildir. Yaklaşık iki dakikada nerede olduğunuzu görün.",
     "note": "Ücretsiz değerlendirme. İş veya vize garantisi verilmez.",
-    "emailLabel": "E-posta adresi",
-    "emailPlaceholder": "siz@ornek.com",
-    "submit": "Beni Bilgilendir",
-    "success": "Teşekkürler. Değerlendirme hazır olduğunda sizinle iletişime geçeceğiz.",
-    "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
-    "contactLink": "Hemen konuşmak ister misiniz? İletişime geçin"
+    "quiz": {
+      "progress": "Soru {current} / {total}",
+      "back": "Geri",
+      "continue": "Devam",
+      "finish": "Sonucumu Gör",
+      "questions": {
+        "experience": {
+          "title": "Kaç yıllık profesyonel IT deneyiminiz var?",
+          "options": {
+            "lessThan1": "1 yıldan az",
+            "1to2": "1–2 yıl",
+            "3to5": "3–5 yıl",
+            "6to9": "6–9 yıl",
+            "10plus": "10 yıl veya daha fazla"
+          }
+        },
+        "field": {
+          "title": "Mevcut uzmanlık alanınızı en iyi hangisi tanımlar?",
+          "options": {
+            "software": "Yazılım Mühendisliği / Geliştirme",
+            "devops": "DevOps / Cloud / SRE / Platform Engineering",
+            "security": "Siber Güvenlik",
+            "data": "Veri Mühendisliği / Veri Bilimi / AI",
+            "qa": "QA / Test Otomasyonu",
+            "support": "IT Destek / Sistem / Ağ Yönetimi",
+            "product": "Teknoloji alanında Ürün / Proje / İş Analizi",
+            "design": "UI / UX / Dijital Tasarım",
+            "entry": "Giriş seviyesi veya IT’ye geçiş aşamasında",
+            "other": "Diğer IT alanı"
+          }
+        },
+        "english": {
+          "title": "İngilizce çalışırken ve mülakatlarda kendinizi ne kadar rahat hissediyorsunuz?",
+          "options": {
+            "notComfortable": "Profesyonel iletişim için henüz yeterince rahat değilim",
+            "basic": "Temel iş yeri konuşmalarını yönetebilirim",
+            "someDifficulty": "Bir miktar zorlukla İngilizce çalışıp mülakata girebilirim",
+            "comfortable": "İngilizce çalışmak ve mülakata girmek benim için rahat",
+            "fluent": "Tam akıcıyım veya İngilizceyi her gün profesyonel olarak kullanıyorum"
+          }
+        },
+        "cv": {
+          "title": "CV’niz ve LinkedIn profiliniz uluslararası başvurular için ne kadar hazır?",
+          "options": {
+            "notPrepared": "Henüz hazırlamadım",
+            "majorImprovement": "Var ancak ciddi iyileştirme gerekiyor",
+            "notTailored": "Güncel ancak Malta veya uluslararası rollere göre uyarlanmamış",
+            "wellStructured": "İyi yapılandırılmış ve ölçülebilir deneyime odaklı",
+            "activelyTailored": "İlgili rollere aktif olarak uyarlanıyor"
+          }
+        },
+        "workAuth": {
+          "title": "Mevcut durumunuzu en iyi hangisi tanımlar?",
+          "infoNote": "Bu soru yalnızca sürecin pratik karmaşıklığını değerlendirmek içindir. Malta Mentor hukuki danışmanlık veya göçmenlik danışmanlığı sunmaz.",
+          "options": {
+            "euEea": "AB/AEA/İsviçre vatandaşıyım",
+            "rightToWork": "Malta’da çalışma hakkım zaten var",
+            "sponsorship": "İşveren sponsorluğu gerektirebilecek AB dışı bir profesyonelim",
+            "unsure": "Ne tür bir izne ihtiyacım olacağından emin değilim"
+          }
+        },
+        "salary": {
+          "title": "Malta için maaş beklentinizi nasıl belirlediniz?",
+          "options": {
+            "notResearched": "Henüz maaş veya yaşam maliyetini araştırmadım",
+            "targetOnly": "Bir maaş hedefim var ancak Malta piyasasıyla karşılaştırmadım",
+            "salaryOnly": "Maaşları araştırdım ancak olası yaşam maliyetimi hesaplamadım",
+            "compared": "Maaşları, vergileri ve yaşam maliyetlerini karşılaştırdım",
+            "realistic": "Beklentilerin role, deneyime ve taşınma koşullarına göre değişebileceğini anlıyorum"
+          }
+        },
+        "relocation": {
+          "title": "Uygun bir fırsat bulmanız halinde taşınmaya ne kadar hazırsınız?",
+          "options": {
+            "casual": "Yalnızca genel olarak araştırıyorum",
+            "withinYear": "Önümüzdeki bir yıl içinde taşınmayı düşünebilirim",
+            "3to6months": "3–6 ay içinde taşınmayı düşünürüm",
+            "1to3months": "Aktif başvuru yapıyorum ve 1–3 ay içinde taşınabilirim",
+            "inMalta": "Zaten Malta’dayım"
+          }
+        }
+      }
+    },
+    "result": {
+      "readinessLabel": "Kariyer hazırlık göstergesi",
+      "strengthsTitle": "Güçlü Yönleriniz",
+      "improveTitle": "Geliştirilebilecek Alanlar",
+      "nextStepTitle": "Önerilen Sonraki Adım",
+      "disclaimer": "Bu puan yalnızca verdiğiniz yanıtlara dayanan genel bir kariyer hazırlık göstergesidir. İş tahmini, işe alım kararı, hukuki değerlendirme veya göçmenlik uygunluk kontrolü değildir. İş fırsatları; işverenlere, piyasa koşullarına, deneyime, zamanlamaya ve kişisel şartlara göre değişir.",
+      "retake": "Değerlendirmeyi Tekrarla",
+      "exploreMentorship": "Mentorluk Seçeneklerini İncele",
+      "emailTitle": "Sonucumu ve Malta Kariyer Kontrol Listesini Gönder",
+      "emailHint": "İsteğe bağlı. Yapılandırıldığında mevcut bülten API’sini kullanır (RESEND_API_KEY).",
+      "emailPlaceholder": "siz@ornek.com",
+      "emailSubmit": "Gönder",
+      "emailSuccess": "Teşekkürler. E-posta gönderimi yapılandırıldıysa kontrol listenizi kısa sürede ileteceğiz.",
+      "emailError": "E-posta kaydedilemedi. Sonucunuzu yukarıdan kullanabilir veya doğrudan iletişime geçebilirsiniz.",
+      "bands": {
+        "early": {
+          "title": "İlk Araştırma Aşaması",
+          "explanation": "Malta değerlendirmeye değer bir seçenek olabilir; ancak profilinizde veya hazırlık sürecinizde netleştirilmesi gereken bazı önemli alanlar bulunuyor. Öncelikle piyasayı anlamaya, başvuru materyallerinizi geliştirmeye ve gerçekçi beklentiler oluşturmaya odaklanın.",
+          "cta": "Malta Kariyer Kaynaklarını İncele"
+        },
+        "developing": {
+          "title": "Gelişmekte Olan Potansiyel",
+          "explanation": "Profiliniz Malta IT piyasası açısından belirli bir potansiyel gösteriyor; ancak daha güçlü bir hazırlık, konumlandırmanızı önemli ölçüde geliştirebilir. Bir sonraki önceliğiniz, değerlendirmede belirlenen zayıf alanlara odaklanmak olmalıdır.",
+          "cta": "Malta Kariyer Değerlendirmesi Al"
+        },
+        "good": {
+          "title": "Güçlü Bir Başlangıç",
+          "explanation": "Malta’daki IT fırsatlarını değerlendirmek için sağlam bir başlangıç noktasına sahipsiniz. Profiliniz genel olarak hazırlıklı görünüyor; ancak başvuru stratejinizde veya taşınma planınızda yapacağınız hedefli iyileştirmeler daha bilinçli kariyer kararları almanıza yardımcı olabilir.",
+          "cta": "Malta İş Arama Programını İncele"
+        },
+        "strong": {
+          "title": "Yüksek Hazırlık Seviyesi",
+          "explanation": "Yanıtlarınız Malta’daki uygun IT fırsatlarını değerlendirmek için iyi hazırlandığınızı gösteriyor. Bir sonraki adım, varsayımlarınızı doğrulamak, uygun işverenleri hedeflemek ve başvurularınızı odaklı bir stratejiyle yürütmektir.",
+          "cta": "Malta İş Arama Planınızı Oluşturun"
+        }
+      }
+    },
+    "insights": {
+      "englishHigh": "İngilizce hazırlığınız uluslararası mülakatlar ve iş yeri iletişimi için destekleyici olmalıdır.",
+      "englishLow": "Profesyonel İngilizce ve mülakat pratiği ilk önceliklerinizden biri olmalıdır.",
+      "cvHigh": "Başvuru materyalleriniz güçlü bir temele sahip görünüyor.",
+      "cvLow": "CV ve LinkedIn konumlandırmanızı geliştirmek başvurularınız üzerinde belirgin etki yaratabilir.",
+      "sponsorship": "Uluslararası işe alıma açık işverenlere odaklanmanız ve sürecin ek karmaşıklık içerebileceğini anlamanız faydalı olabilir.",
+      "workAuthUnsure": "Ne tür çalışma iznine ihtiyaç duyabileceğinizi netleştirmek fırsatları daha gerçekçi değerlendirmenize yardımcı olur.",
+      "workAuthClear": "Çalışma izni durumunuz pratik planlama açısından nispeten net görünüyor.",
+      "salaryLow": "Bir teklifin uygun olup olmadığına karar vermeden önce role özel maaşları, vergileri ve yaşam maliyetlerini araştırın.",
+      "salaryHigh": "Maaş beklentilerinizi piyasa ve yaşam maliyeti bağlamıyla oluşturmuş görünüyorsunuz.",
+      "relocationLow": "Tercih ettiğiniz zaman çizelgesini ve taşınma koşullarını netleştirmek fırsatları daha etkili değerlendirmenize yardımcı olur.",
+      "relocationHigh": "Taşınma zaman çizelgeniz uygun fırsatlara pratik bir pencerede hareket edebileceğinizi gösteriyor.",
+      "experienceCvGap": "Deneyiminiz değerli; ancak mevcut başvuru materyallerinizle yeterince etkili iletilmiyor olabilir.",
+      "experienceSolid": "Profesyonel deneyiminiz ilgili rolleri keşfetmek için makul bir temel sunuyor.",
+      "defaultStrength": "Malta’yı mevcut konumunuz hakkında farkındalıkla değerlendirmeye başlamışsınız.",
+      "defaultImprove": "Malta piyasasını ve kendi önceliklerinizi araştırmaya devam etmek sonraki adımlarınızı netleştirir.",
+      "nextStepExplore": "Malta IT piyasası, yaşam maliyeti ve başvuru beklentileri hakkındaki pratik kaynaklarla başlayın.",
+      "nextStepWorkAuth": "Çalışma izni temellerini araştırın ve uluslararası işe alıma alışkın işverenlere odaklanın—bunu hukuki tavsiye olarak ele almayın.",
+      "nextStepCv": "Başvuru göndermeden önce CV ve LinkedIn profilinizi güçlendirmeye öncelik verin.",
+      "nextStepEnglish": "Yapılandırılmış hazırlık ve pratikle mülakat güveninizi İngilizce’de geliştirin.",
+      "nextStepSalary": "Role özel maaşları Malta için gerçekçi yaşam maliyeti senaryolarıyla karşılaştırın.",
+      "nextStepApply": "Varsayımlarınızı hedefli başvurular ve işveren araştırmasıyla doğrulayın.",
+      "nextStepStrategy": "Hazırlığınızı odaklı eyleme dönüştürmek için yapılandırılmış bir iş arama planı düşünün."
+    }
   },
   "newsletter": {
     "title": "Güncellemeler",

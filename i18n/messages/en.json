@@ -18,7 +18,8 @@
       "subtitle": "Practical career and relocation guidance for international IT professionals exploring opportunities in Malta. Get support with career positioning, CV strategy, interviews, salary expectations and the realities of relocating.",
       "ctaPrimary": "Check Your Malta Career Fit",
       "ctaSecondary": "Explore Mentorship Options",
-      "trustNote": "Practical guidance based on real experience in Malta’s IT market."
+      "trustNote": "Practical guidance based on real experience in Malta’s IT market.",
+      "imageAlt": "View of Malta representing career and relocation opportunities"
     },
     "whoFor": {
       "title": "Is Malta Mentor Right for You?",
@@ -135,8 +136,18 @@
     "careerFit": {
       "title": "Not Sure Where You Stand?",
       "text": "Complete a short assessment and get a clearer picture of how your experience, skills, salary expectations and relocation situation may fit Malta’s IT market.",
-      "cta": "Check My Career Fit",
-      "note": "Free assessment. No job or visa guarantees."
+      "cta": "Start the Free Assessment",
+      "meta": "7 questions · Around 2 minutes · Instant result",
+      "note": "Free assessment. No job or visa guarantees.",
+      "previewFactors": [
+        "Professional experience",
+        "IT specialisation",
+        "English readiness",
+        "CV and LinkedIn preparation",
+        "Work authorisation situation",
+        "Salary expectations",
+        "Relocation readiness"
+      ]
     },
     "resources": {
       "title": "Practical Malta Career Resources",
@@ -235,18 +246,156 @@
   "careerFit": {
     "meta": {
       "title": "Malta Career Fit",
-      "description": "A free introductory check to understand how your profile may fit Malta’s IT market. No job or visa guarantees."
+      "description": "A free 7-question readiness check for international IT professionals exploring Malta. No job or visa guarantees."
     },
     "title": "Malta Career Fit",
-    "subtitle": "Get a clearer starting point before you invest time and money in your Malta move.",
-    "intro": "The full interactive assessment is coming soon. For now, leave your email and we will notify you when it is ready—or reach out directly if you want to discuss your situation.",
+    "subtitle": "Answer 7 short questions and get an instant readiness indicator for exploring IT opportunities in Malta.",
+    "intro": "This is an educational self-assessment—not a hiring, immigration or legal decision. Take about two minutes to see where you stand.",
     "note": "Free assessment. No job or visa guarantees.",
-    "emailLabel": "Email address",
-    "emailPlaceholder": "you@example.com",
-    "submit": "Notify Me",
-    "success": "Thank you. We will be in touch when the assessment is available.",
-    "error": "Something went wrong. Please try again.",
-    "contactLink": "Prefer to talk now? Contact us"
+    "quiz": {
+      "progress": "Question {current} of {total}",
+      "back": "Back",
+      "continue": "Continue",
+      "finish": "See My Result",
+      "questions": {
+        "experience": {
+          "title": "How many years of professional IT experience do you have?",
+          "options": {
+            "lessThan1": "Less than 1 year",
+            "1to2": "1–2 years",
+            "3to5": "3–5 years",
+            "6to9": "6–9 years",
+            "10plus": "10 or more years"
+          }
+        },
+        "field": {
+          "title": "Which area best describes your current profession?",
+          "options": {
+            "software": "Software Engineering / Development",
+            "devops": "DevOps / Cloud / SRE / Platform Engineering",
+            "security": "Cybersecurity",
+            "data": "Data Engineering / Data Science / AI",
+            "qa": "QA / Test Automation",
+            "support": "IT Support / Systems / Network Administration",
+            "product": "Product / Project / Business Analysis in technology",
+            "design": "UI / UX / Digital Design",
+            "entry": "Entry-level or currently transitioning into IT",
+            "other": "Other IT field"
+          }
+        },
+        "english": {
+          "title": "How comfortable are you working and interviewing in English?",
+          "options": {
+            "notComfortable": "I am not yet comfortable communicating professionally",
+            "basic": "I can manage basic workplace conversations",
+            "someDifficulty": "I can work and interview in English with some difficulty",
+            "comfortable": "I am comfortable working and interviewing in English",
+            "fluent": "I am fully fluent or use English professionally every day"
+          }
+        },
+        "cv": {
+          "title": "How prepared are your CV and LinkedIn profile for international applications?",
+          "options": {
+            "notPrepared": "I have not prepared them yet",
+            "majorImprovement": "They exist but need major improvement",
+            "notTailored": "They are updated but not tailored to Malta or international roles",
+            "wellStructured": "They are well structured and focused on measurable experience",
+            "activelyTailored": "They are actively tailored to relevant roles"
+          }
+        },
+        "workAuth": {
+          "title": "Which option best describes your current situation?",
+          "infoNote": "This question only reflects the practical complexity of the process. Malta Mentor does not provide legal or immigration advice.",
+          "options": {
+            "euEea": "I am an EU/EEA/Swiss citizen",
+            "rightToWork": "I already have the right to work in Malta",
+            "sponsorship": "I am a non-EU professional who may require employer sponsorship",
+            "unsure": "I am not sure what type of permission I would need"
+          }
+        },
+        "salary": {
+          "title": "How have you formed your salary expectations for Malta?",
+          "options": {
+            "notResearched": "I have not researched salaries or living costs yet",
+            "targetOnly": "I have a salary target but have not compared it with Malta’s market",
+            "salaryOnly": "I have researched salaries but not calculated my likely living costs",
+            "compared": "I have compared salaries, taxes and living costs",
+            "realistic": "I understand that expectations may need to vary by role, experience and relocation conditions"
+          }
+        },
+        "relocation": {
+          "title": "How prepared are you to relocate if you receive a suitable opportunity?",
+          "options": {
+            "casual": "I am only casually exploring",
+            "withinYear": "I may consider relocating within the next year",
+            "3to6months": "I would consider relocating within 3–6 months",
+            "1to3months": "I am actively applying and could relocate within 1–3 months",
+            "inMalta": "I am already in Malta"
+          }
+        }
+      }
+    },
+    "result": {
+      "readinessLabel": "Career readiness indicator",
+      "strengthsTitle": "Your Strengths",
+      "improveTitle": "Areas to Improve",
+      "nextStepTitle": "Recommended Next Step",
+      "disclaimer": "This score is an informal career-readiness indicator based only on your answers. It is not a job prediction, recruitment decision, legal assessment or immigration eligibility check. Job opportunities depend on employers, market conditions, experience, timing and individual circumstances.",
+      "retake": "Retake the Assessment",
+      "exploreMentorship": "Explore Mentorship Options",
+      "emailTitle": "Send My Result and Malta Career Checklist",
+      "emailHint": "Optional. Uses the existing newsletter API when configured (RESEND_API_KEY).",
+      "emailPlaceholder": "you@example.com",
+      "emailSubmit": "Send",
+      "emailSuccess": "Thank you. If email delivery is configured, we will send your checklist shortly.",
+      "emailError": "Could not save your email. You can still use your result above or contact us directly.",
+      "bands": {
+        "early": {
+          "title": "Early Exploration",
+          "explanation": "Malta may still be an option worth exploring, but your profile or preparation currently has several areas that need clarification. Focus first on understanding the market, improving your application materials and forming realistic expectations.",
+          "cta": "Explore Malta Career Resources"
+        },
+        "developing": {
+          "title": "Developing Potential",
+          "explanation": "Your profile shows some potential for Malta’s IT market, but stronger preparation could significantly improve your positioning. Your next priority should be addressing the weaker areas identified in this assessment.",
+          "cta": "Book a Malta Career Assessment"
+        },
+        "good": {
+          "title": "Good Foundation",
+          "explanation": "You have a solid starting point for exploring Malta-based IT opportunities. Your profile appears reasonably prepared, but targeted improvements in your application strategy or relocation planning may increase your chances of making better career decisions.",
+          "cta": "View the Malta Job Search Sprint"
+        },
+        "strong": {
+          "title": "Strong Readiness",
+          "explanation": "Your answers indicate that you are well prepared to explore relevant IT opportunities in Malta. The next step is to validate your assumptions, target suitable employers and approach applications with a focused strategy.",
+          "cta": "Build Your Malta Job Search Plan"
+        }
+      }
+    },
+    "insights": {
+      "englishHigh": "Your English readiness should support international interviews and workplace communication.",
+      "englishLow": "Professional English and interview practice should be one of your first priorities.",
+      "cvHigh": "Your application materials appear to have a strong foundation.",
+      "cvLow": "Improving your CV and LinkedIn positioning may have a significant impact on your applications.",
+      "sponsorship": "You may need to focus on employers that are open to international hiring and understand that the process can involve additional complexity.",
+      "workAuthUnsure": "Clarifying what type of work permission you may need will help you evaluate opportunities more realistically.",
+      "workAuthClear": "Your work authorisation situation appears relatively straightforward from a practical planning perspective.",
+      "salaryLow": "Research role-specific salaries, taxes and expected living costs before deciding whether an offer is suitable.",
+      "salaryHigh": "You appear to have formed salary expectations with useful market and cost-of-living context.",
+      "relocationLow": "Clarifying your preferred timeline and relocation conditions will help you evaluate opportunities more effectively.",
+      "relocationHigh": "Your relocation timeline suggests you could act on suitable opportunities within a practical window.",
+      "experienceCvGap": "Your experience is valuable, but it may not be communicated effectively through your current application materials.",
+      "experienceSolid": "Your professional experience provides a reasonable foundation for exploring relevant roles.",
+      "defaultStrength": "You have started evaluating Malta with useful self-awareness about your current position.",
+      "defaultImprove": "Continuing to research Malta’s market and your own priorities will sharpen your next steps.",
+      "nextStepExplore": "Start with practical resources on Malta’s IT market, living costs and application expectations.",
+      "nextStepWorkAuth": "Research work authorisation basics and focus on employers experienced with international hires—without treating this as legal advice.",
+      "nextStepCv": "Prioritise strengthening your CV and LinkedIn profile before sending applications.",
+      "nextStepEnglish": "Build interview confidence in English through practice and structured preparation.",
+      "nextStepSalary": "Compare role-specific salaries with realistic living-cost scenarios for Malta.",
+      "nextStepApply": "Validate your assumptions with targeted applications and employer research.",
+      "nextStepStrategy": "Consider a structured job-search plan to turn your preparation into focused action."
+    }
   },
   "newsletter": {
     "title": "Stay updated",

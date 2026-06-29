@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8eb4d4"/>
+      <stop offset="55%" stop-color="#c9d8e8"/>
+      <stop offset="100%" stop-color="#e8eef4"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c5f7a"/>
+      <stop offset="100%" stop-color="#1a3a52"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <rect y="720" width="1600" height="280" fill="url(#sea)"/>
+  <!-- Valletta-style skyline silhouette -->
+  <path fill="#4a5568" d="M0 720 L0 520 L120 520 L140 480 L160 520 L280 520 L300 460 L340 520 L480 520 L500 420 L540 520 L700 520 L720 380 L760 520 L920 520 L940 440 L980 520 L1150 520 L1170 400 L1210 520 L1380 520 L1400 480 L1420 520 L1600 520 L1600 720 Z"/>
+  <path fill="#374151" opacity="0.85" d="M0 720 L0 580 L90 580 L110 540 L130 580 L250 580 L270 500 L310 580 L450 580 L470 460 L510 580 L660 580 L680 420 L720 580 L880 580 L900 500 L940 580 L1100 580 L1120 460 L1160 580 L1320 580 L1340 520 L1360 580 L1600 580 L1600 720 Z"/>
+</svg>
