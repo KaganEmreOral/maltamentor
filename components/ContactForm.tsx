@@ -3,16 +3,19 @@
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
-const PACKAGE_OPTIONS = [
-  'Discovery Session (50 EUR)',
-  'Job Search Mentorship (200 EUR)',
-];
+type Props = { className?: string };
 
-type Props = { className?: string; packageOptions?: string[] };
-
-export function ContactForm({ className = '', packageOptions = PACKAGE_OPTIONS }: Props) {
+export function ContactForm({ className = '' }: Props) {
   const t = useTranslations('contact');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const packageOptions = [
+    t('packages.assessment'),
+    t('packages.sprint'),
+    t('packages.toolkit'),
+    t('packages.careerFit'),
+    t('packages.other'),
+  ];
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();

@@ -1,24 +1,159 @@
 {
   "nav": {
     "home": "Home",
+    "mentorship": "Mentorship",
+    "resources": "Resources",
     "about": "About",
-    "packages": "Packages",
-    "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contact",
+    "careerFitCta": "Check Your Career Fit",
+    "brand": "Malta Mentor"
   },
   "home": {
-    "heroTitle": "Helping IT Professionals Build Careers in Malta",
-    "heroCta": "Request a Consultation",
-    "introTitle": "Mentoring for IT Professionals Relocating to Malta",
-    "introText": "Whether you are considering a move to Malta or already here, I offer practical mentoring focused on the local IT job market: from CV and LinkedIn optimisation to interview preparation and relocation advice. My goal is to help you land a role that fits your skills and ambitions.",
-    "ctaTitle": "Ready to take the next step?",
-    "ctaButton": "Request a Consultation"
+    "meta": {
+      "title": "Malta Mentor | IT Careers, Jobs and Relocation Guidance in Malta",
+      "description": "Practical career and relocation guidance for international IT professionals exploring jobs, salaries, interviews and life in Malta."
+    },
+    "hero": {
+      "title": "Build Your IT Career in Malta with a Clear, Realistic Plan",
+      "subtitle": "Practical career and relocation guidance for international IT professionals exploring opportunities in Malta. Get support with career positioning, CV strategy, interviews, salary expectations and the realities of relocating.",
+      "ctaPrimary": "Check Your Malta Career Fit",
+      "ctaSecondary": "Explore Mentorship Options",
+      "trustNote": "Practical guidance based on real experience in Malta’s IT market."
+    },
+    "whoFor": {
+      "title": "Is Malta Mentor Right for You?",
+      "audiences": [
+        {
+          "title": "Exploring Malta",
+          "text": "You are considering Malta but are unsure about the job market, salaries, permits, cost of living or whether the move makes sense for your profile."
+        },
+        {
+          "title": "Preparing to Apply",
+          "text": "You want to improve your CV, LinkedIn profile, job search strategy and positioning for Malta-based IT roles."
+        },
+        {
+          "title": "Evaluating an Opportunity",
+          "text": "You already have interviews or an offer and want help assessing salary, relocation conditions, career potential and the practical realities of the move."
+        }
+      ]
+    },
+    "howHelps": {
+      "title": "Practical Support at Every Stage",
+      "steps": [
+        {
+          "title": "Understand Your Position",
+          "items": [
+            "Profile and experience assessment",
+            "Realistic role and salary expectations",
+            "Malta career suitability"
+          ]
+        },
+        {
+          "title": "Strengthen Your Application",
+          "items": [
+            "CV and LinkedIn positioning",
+            "Job search strategy",
+            "Interview preparation"
+          ]
+        },
+        {
+          "title": "Make Better Decisions",
+          "items": [
+            "Offer and salary evaluation",
+            "Relocation planning",
+            "Practical Malta guidance"
+          ]
+        }
+      ]
+    },
+    "founder": {
+      "title": "Guidance from Someone Who Has Done It",
+      "paragraphs": [
+        "I moved to Malta with around two years of IT experience and built my career here step by step, progressing into a Senior Site Reliability Engineer role.",
+        "Along the way, I experienced job applications, interviews, company changes, salary negotiations, work permit processes and the realities of building a life in Malta.",
+        "Malta Mentor is the practical resource I wish I had before moving: honest guidance, realistic expectations and clear next steps for IT professionals considering Malta."
+      ],
+      "credibility": [
+        "IT career experience in Malta",
+        "First-hand relocation and permit experience",
+        "Experience across multiple IT roles and companies",
+        "Practical understanding of Malta’s working and living conditions"
+      ],
+      "photoAlt": "Malta Mentor founder — photo placeholder"
+    },
+    "packages": {
+      "title": "Mentorship Options",
+      "subtitle": "Three focused ways to get practical support. No overwhelming menu of services.",
+      "comingSoon": "Coming Soon",
+      "items": [
+        {
+          "name": "Malta Career Assessment",
+          "price": "€49",
+          "description": "A focused one-to-one session to assess your background, goals and realistic opportunities in Malta.",
+          "features": [
+            "Profile and experience review",
+            "Suitable role direction",
+            "Salary and market expectations",
+            "Key risks and opportunities",
+            "Personal next-step recommendations"
+          ],
+          "cta": "Book an Assessment",
+          "href": "/contact"
+        },
+        {
+          "name": "Malta Job Search Sprint",
+          "price": "€249",
+          "description": "A structured four-week programme for IT professionals actively preparing to apply for roles in Malta.",
+          "features": [
+            "Initial career strategy session",
+            "CV review and positioning",
+            "LinkedIn profile guidance",
+            "Job search plan",
+            "One mock interview",
+            "Weekly progress check-ins",
+            "Final action plan"
+          ],
+          "cta": "View the Programme",
+          "href": "/contact",
+          "popular": true
+        },
+        {
+          "name": "Malta Career Toolkit",
+          "price": "Coming Soon",
+          "description": "A practical digital toolkit with Malta-focused CV templates, application resources, relocation checklists and job search planning tools.",
+          "features": [
+            "Malta-focused CV templates",
+            "Application resources",
+            "Relocation checklists",
+            "Job search planning tools"
+          ],
+          "cta": "Join the Waitlist",
+          "href": "/contact"
+        }
+      ]
+    },
+    "careerFit": {
+      "title": "Not Sure Where You Stand?",
+      "text": "Complete a short assessment and get a clearer picture of how your experience, skills, salary expectations and relocation situation may fit Malta’s IT market.",
+      "cta": "Check My Career Fit",
+      "note": "Free assessment. No job or visa guarantees."
+    },
+    "resources": {
+      "title": "Practical Malta Career Resources",
+      "cta": "View All Resources"
+    },
+    "finalCta": {
+      "title": "Take the Next Step with a Clearer Plan",
+      "text": "Whether you are only exploring Malta or actively applying for jobs, Malta Mentor can help you understand your position and make better-informed career decisions.",
+      "ctaPrimary": "Book a Career Assessment",
+      "ctaSecondary": "Explore Resources"
+    }
   },
   "about": {
     "title": "About",
-    "introShort": "SRE and DevOps engineer in Malta, mentoring IT professionals who want to build their careers here.",
+    "introShort": "Senior SRE in Malta, guiding international IT professionals through realistic career and relocation decisions.",
     "story": [
-      "I have been living in Malta for three years. I work as an SRE / DevOps engineer, supporting systems and platforms that need to stay reliable in fast-moving environments.",
+      "I moved to Malta with around two years of IT experience and built my career here step by step, progressing into a Senior Site Reliability Engineer role.",
       "Over that time I have worked in different sectors and roles—from startups to more established companies. That variety gave me exposure to how teams hire, how interviews are structured, and what employers in Malta actually look for beyond buzzwords on a CV.",
       "I mentor IT professionals who want to find a job here or take the next step in their career. My aim is to share what I have learned first-hand: how to present your experience clearly, prepare for technical and behavioural interviews, and understand the local job market with realistic expectations.",
       "If you are planning to relocate or are already on the island and want structured guidance, I would be glad to help you move forward with clarity and confidence."
@@ -31,22 +166,51 @@
     "service5": "Relocation advice"
   },
   "packages": {
-    "title": "Packages",
-    "subtitle": "Choose the support that fits your needs.",
-    "requestCta": "Request Consultation",
+    "title": "Mentorship",
+    "subtitle": "Focused support for IT professionals exploring or pursuing careers in Malta.",
+    "requestCta": "Get in Touch",
     "popular": "Most Popular",
-    "p1Name": "Discovery Session",
-    "p1Price": "50 EUR",
-    "p1Features": ["30 minute consultation", "Malta life", "IT job market", "Living conditions", "Q&A session"],
-    "p2Name": "Job Search Mentorship",
-    "p2Price": "200 EUR",
-    "p2Features": ["Weekly guidance", "Job search strategy", "CV and LinkedIn optimisation", "Interview preparation", "Sharing recruiter and headhunter opportunities", "Ongoing mentoring support"]
+    "comingSoon": "Coming Soon",
+    "p1Name": "Malta Career Assessment",
+    "p1Price": "€49",
+    "p1Description": "A focused one-to-one session to assess your background, goals and realistic opportunities in Malta.",
+    "p1Features": [
+      "Profile and experience review",
+      "Suitable role direction",
+      "Salary and market expectations",
+      "Key risks and opportunities",
+      "Personal next-step recommendations"
+    ],
+    "p1Cta": "Book an Assessment",
+    "p2Name": "Malta Job Search Sprint",
+    "p2Price": "€249",
+    "p2Description": "A structured four-week programme for IT professionals actively preparing to apply for roles in Malta.",
+    "p2Features": [
+      "Initial career strategy session",
+      "CV review and positioning",
+      "LinkedIn profile guidance",
+      "Job search plan",
+      "One mock interview",
+      "Weekly progress check-ins",
+      "Final action plan"
+    ],
+    "p2Cta": "View the Programme",
+    "p3Name": "Malta Career Toolkit",
+    "p3Price": "Coming Soon",
+    "p3Description": "A practical digital toolkit with Malta-focused CV templates, application resources, relocation checklists and job search planning tools.",
+    "p3Features": [
+      "Malta-focused CV templates",
+      "Application resources",
+      "Relocation checklists",
+      "Job search planning tools"
+    ],
+    "p3Cta": "Join the Waitlist"
   },
   "blog": {
-    "title": "Blog",
-    "subtitle": "Insights on the IT job market and life in Malta.",
+    "title": "Resources",
+    "subtitle": "Practical insights on Malta’s IT job market, cost of living and relocation.",
     "readMore": "Read more",
-    "backToBlog": "Back to Blog",
+    "backToBlog": "Back to Resources",
     "publishedOn": "Published on"
   },
   "contact": {
@@ -57,16 +221,98 @@
     "message": "Message",
     "package": "Interested Package",
     "packagePlaceholder": "Select a package",
+    "packages": {
+      "assessment": "Malta Career Assessment (€49)",
+      "sprint": "Malta Job Search Sprint (€249)",
+      "toolkit": "Malta Career Toolkit (Waitlist)",
+      "careerFit": "Malta Career Fit Assessment",
+      "other": "General enquiry"
+    },
     "send": "Submit",
     "success": "Thank you. We will contact you shortly.",
     "error": "Something went wrong. Please try again in a moment."
   },
+  "careerFit": {
+    "meta": {
+      "title": "Malta Career Fit",
+      "description": "A free introductory check to understand how your profile may fit Malta’s IT market. No job or visa guarantees."
+    },
+    "title": "Malta Career Fit",
+    "subtitle": "Get a clearer starting point before you invest time and money in your Malta move.",
+    "intro": "The full interactive assessment is coming soon. For now, leave your email and we will notify you when it is ready—or reach out directly if you want to discuss your situation.",
+    "note": "Free assessment. No job or visa guarantees.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@example.com",
+    "submit": "Notify Me",
+    "success": "Thank you. We will be in touch when the assessment is available.",
+    "error": "Something went wrong. Please try again.",
+    "contactLink": "Prefer to talk now? Contact us"
+  },
+  "newsletter": {
+    "title": "Stay updated",
+    "placeholder": "Your email",
+    "subscribe": "Subscribe",
+    "success": "Thank you for subscribing.",
+    "error": "Subscription failed. Please try again."
+  },
   "footer": {
-    "tagline": "Helping IT professionals build careers in Malta.",
-    "links": "Quick Links",
+    "tagline": "Career and relocation guidance for international IT professionals exploring Malta.",
+    "links": "Navigation",
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
-    "copyright": "All rights reserved."
+    "disclaimer": "Disclaimer",
+    "copyright": "All rights reserved.",
+    "disclaimerText": "Malta Mentor provides career and relocation guidance based on personal and professional experience. It does not provide legal, immigration, tax or recruitment services, and no job, visa or work permit outcome is guaranteed."
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "metaDescription": "How Malta Mentor handles your personal data.",
+      "placeholderNotice": "This is a draft placeholder. Final privacy policy text must be reviewed by a qualified legal professional before publication.",
+      "sections": [
+        {
+          "heading": "Overview",
+          "body": "Malta Mentor collects information you submit through contact forms, newsletter sign-ups and career fit requests in order to respond to enquiries and provide guidance services."
+        },
+        {
+          "heading": "Data we collect",
+          "body": "This may include your name, email address, message content and package preferences. Technical logs may be stored for security and debugging purposes."
+        },
+        {
+          "heading": "How we use your data",
+          "body": "We use submitted information to reply to your requests, deliver mentorship services you book, and—if you opt in—send relevant updates about Malta Mentor resources."
+        },
+        {
+          "heading": "Your rights",
+          "body": "You may request access, correction or deletion of your personal data by contacting us. We will respond within a reasonable timeframe."
+        }
+      ],
+      "todo": "TODO: Replace with legally reviewed final privacy policy including data processors, retention periods, cookies and international transfers."
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "metaDescription": "Terms for using the Malta Mentor website and services.",
+      "placeholderNotice": "This is a draft placeholder. Final terms must be reviewed by a qualified legal professional before publication.",
+      "sections": [
+        {
+          "heading": "Nature of the service",
+          "body": "Malta Mentor provides career and relocation guidance based on personal and professional experience. It is not a law firm, immigration consultancy, tax advisory or recruitment agency."
+        },
+        {
+          "heading": "No guarantees",
+          "body": "We do not guarantee employment, interviews, visas, work permits, salary outcomes or relocation success. All guidance is informational and based on lived experience."
+        },
+        {
+          "heading": "Use of the website",
+          "body": "You agree to use this website lawfully and not to misuse contact forms or automated systems. Content is provided for general guidance and may change without notice."
+        },
+        {
+          "heading": "Paid services",
+          "body": "Specific terms for paid mentorship sessions and digital products will be provided at the point of purchase. Refund policies will be stated clearly before payment."
+        }
+      ],
+      "todo": "TODO: Replace with legally reviewed final terms including governing law, liability limits and dispute resolution."
+    }
   }
 }

@@ -1,25 +1,160 @@
 {
   "nav": {
     "home": "Ana Sayfa",
+    "mentorship": "Mentorluk",
+    "resources": "Kaynaklar",
     "about": "Hakkımda",
-    "packages": "Paketler",
-    "blog": "Blog",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "careerFitCta": "Kariyer Uygunluğunu Kontrol Et",
+    "brand": "Malta Mentor"
   },
   "home": {
-    "heroTitle": "Malta'da IT Profesyonellerinin Kariyer Kurmasına Yardımcı Oluyoruz",
-    "heroCta": "Danışmanlık Talebi",
-    "introTitle": "Malta'ya Taşınan IT Profesyonleri için Mentorluk",
-    "introText": "İster Malta'ya taşınmayı düşünün ister zaten burada olun, CV ve LinkedIn optimizasyonundan mülakat hazırlığına ve taşınma tavsiyelerine kadar yerel IT iş piyasasına odaklı pratik mentorluk sunuyorum. Amacım, becerilerinize ve hedeflerinize uygun bir rol bulmanıza yardımcı olmak.",
-    "ctaTitle": "Bir sonraki adımı atmaya hazır mısınız?",
-    "ctaButton": "Danışmanlık Talebi"
+    "meta": {
+      "title": "Malta Mentor | Malta’da IT Kariyeri ve Taşınma Rehberliği",
+      "description": "Malta’daki iş fırsatlarını değerlendiren IT profesyonelleri için kariyer, CV, mülakat, maaş ve taşınma rehberliği."
+    },
+    "hero": {
+      "title": "Malta’daki IT Kariyerini Net ve Gerçekçi Bir Planla Kur",
+      "subtitle": "Malta’daki fırsatları değerlendiren uluslararası IT profesyonelleri için pratik kariyer ve taşınma rehberliği. CV stratejisi, mülakatlar, maaş beklentileri, kariyer konumlandırması ve Malta’ya taşınmanın gerçekleri hakkında destek alın.",
+      "ctaPrimary": "Malta Kariyer Uygunluğunu Kontrol Et",
+      "ctaSecondary": "Mentorluk Seçeneklerini İncele",
+      "trustNote": "Malta IT piyasasındaki gerçek deneyime dayalı pratik rehberlik."
+    },
+    "whoFor": {
+      "title": "Malta Mentor Sizin İçin Uygun mu?",
+      "audiences": [
+        {
+          "title": "Malta’yı Keşfediyorsunuz",
+          "text": "Malta’yı değerlendiriyorsunuz ancak iş piyasası, maaşlar, izin süreçleri, yaşam maliyeti veya bu taşınmanın profiliniz için mantıklı olup olmadığı konusunda emin değilsiniz."
+        },
+        {
+          "title": "Başvuruya Hazırlanıyorsunuz",
+          "text": "CV’nizi, LinkedIn profilinizi, iş arama stratejinizi ve Malta’daki IT pozisyonlarına yönelik konumlandırmanızı geliştirmek istiyorsunuz."
+        },
+        {
+          "title": "Bir Fırsatı Değerlendiriyorsunuz",
+          "text": "Mülakat sürecindesiniz veya bir teklif aldınız ve maaş, taşınma şartları, kariyer potansiyeli ve Malta’daki yaşamın gerçekleri hakkında değerlendirme istiyorsunuz."
+        }
+      ]
+    },
+    "howHelps": {
+      "title": "Her Aşamada Pratik Destek",
+      "steps": [
+        {
+          "title": "Konumunuzu Anlayın",
+          "items": [
+            "Profil ve deneyim değerlendirmesi",
+            "Gerçekçi rol ve maaş beklentileri",
+            "Malta kariyer uygunluğu"
+          ]
+        },
+        {
+          "title": "Başvurunuzu Güçlendirin",
+          "items": [
+            "CV ve LinkedIn konumlandırması",
+            "İş arama stratejisi",
+            "Mülakat hazırlığı"
+          ]
+        },
+        {
+          "title": "Daha İyi Kararlar Verin",
+          "items": [
+            "Teklif ve maaş değerlendirmesi",
+            "Taşınma planlaması",
+            "Pratik Malta rehberliği"
+          ]
+        }
+      ]
+    },
+    "founder": {
+      "title": "Bu Süreci Gerçekten Yaşamış Birinden Rehberlik",
+      "paragraphs": [
+        "Malta’ya yaklaşık iki yıllık IT deneyimiyle taşındım ve kariyerimi burada adım adım geliştirerek Senior Site Reliability Engineer pozisyonuna ilerledim.",
+        "Bu süreçte iş başvuruları, mülakatlar, şirket değişiklikleri, maaş görüşmeleri, çalışma izni süreçleri ve Malta’da yeni bir hayat kurmanın gerçeklerini bizzat deneyimledim.",
+        "Malta Mentor, Malta’ya taşınmadan önce sahip olmak istediğim pratik kaynak olarak doğdu: Malta’yı değerlendiren IT profesyonelleri için dürüst rehberlik, gerçekçi beklentiler ve net sonraki adımlar."
+      ],
+      "credibility": [
+        "Malta’da IT kariyer deneyimi",
+        "Bizzat yaşanmış taşınma ve izin süreçleri",
+        "Farklı IT rolleri ve şirketlerde deneyim",
+        "Malta’daki çalışma ve yaşam koşullarına pratik hakimiyet"
+      ],
+      "photoAlt": "Malta Mentor kurucusu — fotoğraf yer tutucu"
+    },
+    "packages": {
+      "title": "Mentorluk Seçenekleri",
+      "subtitle": "Pratik destek için üç odaklı seçenek. Karmaşık hizmet menüsü yok.",
+      "comingSoon": "Yakında",
+      "items": [
+        {
+          "name": "Malta Kariyer Değerlendirmesi",
+          "price": "€49",
+          "description": "Geçmişinizi, hedeflerinizi ve Malta’daki gerçekçi fırsatlarınızı değerlendiren odaklı birebir görüşme.",
+          "features": [
+            "Profil ve deneyim incelemesi",
+            "Uygun rol yönü",
+            "Maaş ve piyasa beklentileri",
+            "Temel riskler ve fırsatlar",
+            "Kişisel sonraki adım önerileri"
+          ],
+          "cta": "Değerlendirme Görüşmesi Al",
+          "href": "/contact"
+        },
+        {
+          "name": "Malta İş Arama Programı",
+          "price": "€249",
+          "description": "Malta’daki rollere aktif şekilde başvurmaya hazırlanan IT profesyonelleri için yapılandırılmış dört haftalık program.",
+          "features": [
+            "Başlangıç kariyer stratejisi görüşmesi",
+            "CV incelemesi ve konumlandırma",
+            "LinkedIn profil rehberliği",
+            "İş arama planı",
+            "Bir deneme mülakatı",
+            "Haftalık ilerleme görüşmeleri",
+            "Son eylem planı"
+          ],
+          "cta": "Programı İncele",
+          "href": "/contact",
+          "popular": true
+        },
+        {
+          "name": "Malta Kariyer Araç Seti",
+          "price": "Yakında",
+          "description": "Malta odaklı CV şablonları, başvuru kaynakları, taşınma kontrol listeleri ve iş arama planlama araçları içeren dijital paket.",
+          "features": [
+            "Malta odaklı CV şablonları",
+            "Başvuru kaynakları",
+            "Taşınma kontrol listeleri",
+            "İş arama planlama araçları"
+          ],
+          "cta": "Bekleme Listesine Katıl",
+          "href": "/contact"
+        }
+      ]
+    },
+    "careerFit": {
+      "title": "Hangi Aşamada Olduğunuzdan Emin Değil misiniz?",
+      "text": "Kısa bir değerlendirmeyi tamamlayarak deneyiminizin, yeteneklerinizin, maaş beklentinizin ve taşınma durumunuzun Malta IT piyasasına ne kadar uygun olduğunu daha net görün.",
+      "cta": "Kariyer Uygunluğumu Kontrol Et",
+      "note": "Ücretsiz değerlendirme. İş veya vize garantisi verilmez."
+    },
+    "resources": {
+      "title": "Pratik Malta Kariyer Kaynakları",
+      "cta": "Tüm Kaynakları Gör"
+    },
+    "finalCta": {
+      "title": "Bir Sonraki Adımı Daha Net Bir Planla Atın",
+      "text": "İster Malta’yı yeni değerlendiriyor olun ister aktif olarak iş başvurusu yapıyor olun, Malta Mentor mevcut durumunuzu anlamanıza ve daha bilinçli kariyer kararları vermenize yardımcı olur.",
+      "ctaPrimary": "Kariyer Değerlendirmesi Al",
+      "ctaSecondary": "Kaynakları İncele"
+    }
   },
   "about": {
     "title": "Hakkımda",
-    "introShort": "Malta'da SRE / DevOps mühendisi; burada kariyer kurmak isteyen IT profesyonellerine mentorluk.",
+    "introShort": "Malta’da Senior SRE; uluslararası IT profesyonellerine gerçekçi kariyer ve taşınma kararlarında rehberlik.",
     "story": [
-      "Üç yıldır Malta'da yaşıyorum. SRE / DevOps mühendisi olarak çalışıyorum; hızlı değişen ortamlarda güvenilir kalmaları gereken sistemleri ve platformları destekliyorum.",
-      "Bu süreçte farklı sektörlerde ve rollerde deneyim kazandım—girişimlerden daha kurumsal yapılara kadar. Bu çeşitlilik, ekiplerin nasıl işe alım yaptığını, mülakatların nasıl yapılandığını ve Malta'daki işverenlerin bir CV'deki kelimelerin ötesinde gerçekten ne aradığını görmemi sağladı.",
+      "Malta’ya yaklaşık iki yıllık IT deneyimiyle taşındım ve kariyerimi burada adım adım geliştirerek Senior Site Reliability Engineer pozisyonuna ilerledim.",
+      "Bu süreçte farklı sektörlerde ve rollerde deneyim kazandım—girişimlerden daha kurumsal yapılara kadar. Bu çeşitlilik, ekiplerin nasıl işe alım yaptığını, mülakatların nasıl yapılandığını ve Malta’daki işverenlerin bir CV’deki kelimelerin ötesinde gerçekten ne aradığını görmemi sağladı.",
       "Burada iş bulmak veya kariyerinde bir sonraki adımı atmak isteyen IT profesyonellerine mentorluk yapıyorum. Amacım, ilk elden öğrendiklerimi paylaşmak: deneyiminizi net şekilde nasıl sunacağınız, teknik ve davranışsal mülakatlara nasıl hazırlanacağınız ve yerel iş piyasasını gerçekçi beklentilerle nasıl okuyacağınız.",
       "Taşınmayı planlıyorsanız veya zaten adadasanız ve yapılandırılmış bir rehberlik istiyorsanız, netlik ve güvenle ilerlemenize yardımcı olmaktan memnuniyet duyarım."
     ],
@@ -31,22 +166,51 @@
     "service5": "Taşınma tavsiyesi"
   },
   "packages": {
-    "title": "Paketler",
-    "subtitle": "İhtiyacınıza uygun desteği seçin.",
-    "requestCta": "Danışmanlık Talebi",
+    "title": "Mentorluk",
+    "subtitle": "Malta’yı keşfeden veya kariyer hedefleyen IT profesyonelleri için odaklı destek.",
+    "requestCta": "İletişime Geç",
     "popular": "En Popüler",
-    "p1Name": "Keşif Görüşmesi",
-    "p1Price": "50 EUR",
-    "p1Features": ["30 dakikalık görüşme", "Malta yaşamı", "IT iş piyasası", "Yaşam koşulları", "Soru-cevap"],
-    "p2Name": "İş Arama Mentorluğu",
-    "p2Price": "200 EUR",
-    "p2Features": ["Haftalık rehberlik", "İş arama stratejisi", "CV ve LinkedIn optimizasyonu", "Mülakat hazırlığı", "İşe alım ve headhunter fırsatları", "Devam eden mentorluk desteği"]
+    "comingSoon": "Yakında",
+    "p1Name": "Malta Kariyer Değerlendirmesi",
+    "p1Price": "€49",
+    "p1Description": "Geçmişinizi, hedeflerinizi ve Malta’daki gerçekçi fırsatlarınızı değerlendiren odaklı birebir görüşme.",
+    "p1Features": [
+      "Profil ve deneyim incelemesi",
+      "Uygun rol yönü",
+      "Maaş ve piyasa beklentileri",
+      "Temel riskler ve fırsatlar",
+      "Kişisel sonraki adım önerileri"
+    ],
+    "p1Cta": "Değerlendirme Görüşmesi Al",
+    "p2Name": "Malta İş Arama Programı",
+    "p2Price": "€249",
+    "p2Description": "Malta’daki rollere aktif şekilde başvurmaya hazırlanan IT profesyonelleri için yapılandırılmış dört haftalık program.",
+    "p2Features": [
+      "Başlangıç kariyer stratejisi görüşmesi",
+      "CV incelemesi ve konumlandırma",
+      "LinkedIn profil rehberliği",
+      "İş arama planı",
+      "Bir deneme mülakatı",
+      "Haftalık ilerleme görüşmeleri",
+      "Son eylem planı"
+    ],
+    "p2Cta": "Programı İncele",
+    "p3Name": "Malta Kariyer Araç Seti",
+    "p3Price": "Yakında",
+    "p3Description": "Malta odaklı CV şablonları, başvuru kaynakları, taşınma kontrol listeleri ve iş arama planlama araçları içeren dijital paket.",
+    "p3Features": [
+      "Malta odaklı CV şablonları",
+      "Başvuru kaynakları",
+      "Taşınma kontrol listeleri",
+      "İş arama planlama araçları"
+    ],
+    "p3Cta": "Bekleme Listesine Katıl"
   },
   "blog": {
-    "title": "Blog",
-    "subtitle": "Malta'da IT iş piyasası ve yaşam üzerine içgörüler.",
+    "title": "Kaynaklar",
+    "subtitle": "Malta IT iş piyasası, yaşam maliyeti ve taşınma üzerine pratik içgörüler.",
     "readMore": "Devamını oku",
-    "backToBlog": "Bloga Dön",
+    "backToBlog": "Kaynaklara Dön",
     "publishedOn": "Yayın tarihi"
   },
   "contact": {
@@ -57,16 +221,98 @@
     "message": "Mesajınız",
     "package": "İlgilendiğiniz Paket",
     "packagePlaceholder": "Paket seçin",
+    "packages": {
+      "assessment": "Malta Kariyer Değerlendirmesi (€49)",
+      "sprint": "Malta İş Arama Programı (€249)",
+      "toolkit": "Malta Kariyer Araç Seti (Bekleme Listesi)",
+      "careerFit": "Malta Kariyer Uygunluk Değerlendirmesi",
+      "other": "Genel soru"
+    },
     "send": "Gönder",
     "success": "Teşekkürler. En kısa sürede sizinle iletişime geçeceğiz.",
     "error": "Bir hata oluştu. Lütfen bir süre sonra tekrar deneyin."
   },
+  "careerFit": {
+    "meta": {
+      "title": "Malta Kariyer Uygunluğu",
+      "description": "Profilinizin Malta IT piyasasına ne kadar uyduğunu anlamak için ücretsiz başlangıç kontrolü. İş veya vize garantisi yoktur."
+    },
+    "title": "Malta Kariyer Uygunluğu",
+    "subtitle": "Malta taşınmanıza zaman ve para yatırmadan önce daha net bir başlangıç noktası edinin.",
+    "intro": "Tam etkileşimli değerlendirme yakında hazır olacak. Şimdilik e-postanızı bırakın—hazır olduğunda sizi bilgilendirelim. Durumunuzu hemen konuşmak isterseniz doğrudan iletişime geçebilirsiniz.",
+    "note": "Ücretsiz değerlendirme. İş veya vize garantisi verilmez.",
+    "emailLabel": "E-posta adresi",
+    "emailPlaceholder": "siz@ornek.com",
+    "submit": "Beni Bilgilendir",
+    "success": "Teşekkürler. Değerlendirme hazır olduğunda sizinle iletişime geçeceğiz.",
+    "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+    "contactLink": "Hemen konuşmak ister misiniz? İletişime geçin"
+  },
+  "newsletter": {
+    "title": "Güncellemeler",
+    "placeholder": "E-postanız",
+    "subscribe": "Abone Ol",
+    "success": "Abone olduğunuz için teşekkürler.",
+    "error": "Abonelik başarısız. Lütfen tekrar deneyin."
+  },
   "footer": {
-    "tagline": "Malta'da IT profesyonellerinin kariyer kurmasına yardımcı oluyoruz.",
-    "links": "Hızlı Bağlantılar",
+    "tagline": "Malta’yı değerlendiren uluslararası IT profesyonelleri için kariyer ve taşınma rehberliği.",
+    "links": "Menü",
     "legal": "Yasal",
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Koşulları",
-    "copyright": "Tüm hakları saklıdır."
+    "disclaimer": "Sorumluluk Reddi",
+    "copyright": "Tüm hakları saklıdır.",
+    "disclaimerText": "Malta Mentor, kişisel ve profesyonel deneyime dayalı kariyer ve taşınma rehberliği sunar. Hukuki danışmanlık, göçmenlik danışmanlığı, vergi danışmanlığı veya işe alım hizmeti sağlamaz; iş, vize veya çalışma izni sonucu garanti edilmez."
+  },
+  "legal": {
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "metaDescription": "Malta Mentor kişisel verilerinizi nasıl işler.",
+      "placeholderNotice": "Bu bir taslak yer tutucudur. Nihai gizlilik metni yayınlanmadan önce yetkili bir hukuk uzmanı tarafından incelenmelidir.",
+      "sections": [
+        {
+          "heading": "Genel bakış",
+          "body": "Malta Mentor, iletişim formları, bülten kayıtları ve kariyer uygunluk talepleri aracılığıyla gönderdiğiniz bilgileri taleplere yanıt vermek ve rehberlik hizmetleri sunmak için toplar."
+        },
+        {
+          "heading": "Topladığımız veriler",
+          "body": "Bunlar adınız, e-posta adresiniz, mesaj içeriğiniz ve paket tercihlerinizi içerebilir. Güvenlik ve hata ayıklama amacıyla teknik günlükler saklanabilir."
+        },
+        {
+          "heading": "Verilerinizi nasıl kullanıyoruz",
+          "body": "Gönderilen bilgileri taleplerinize yanıt vermek, rezerve ettiğiniz mentorluk hizmetlerini sunmak ve—onay verirseniz—Malta Mentor kaynaklarıyla ilgili güncellemeler göndermek için kullanırız."
+        },
+        {
+          "heading": "Haklarınız",
+          "body": "Bizimle iletişime geçerek kişisel verilerinize erişim, düzeltme veya silme talep edebilirsiniz. Makul bir süre içinde yanıt veririz."
+        }
+      ],
+      "todo": "TODO: Veri işleyiciler, saklama süreleri, çerezler ve uluslararası aktarımları içeren hukuken onaylanmış nihai gizlilik politikasıyla değiştirin."
+    },
+    "terms": {
+      "title": "Kullanım Koşulları",
+      "metaDescription": "Malta Mentor web sitesi ve hizmetlerinin kullanım koşulları.",
+      "placeholderNotice": "Bu bir taslak yer tutucudur. Nihai koşullar yayınlanmadan önce yetkili bir hukuk uzmanı tarafından incelenmelidir.",
+      "sections": [
+        {
+          "heading": "Hizmetin niteliği",
+          "body": "Malta Mentor, kişisel ve profesyonel deneyime dayalı kariyer ve taşınma rehberliği sunar. Bir hukuk bürosu, göçmenlik danışmanlığı, vergi danışmanlığı veya işe alım ajansı değildir."
+        },
+        {
+          "heading": "Garanti yoktur",
+          "body": "İstihdam, mülakat, vize, çalışma izni, maaş sonucu veya taşınma başarısı garanti edilmez. Tüm rehberlik bilgilendirme amaçlıdır ve yaşanmış deneyime dayanır."
+        },
+        {
+          "heading": "Web sitesinin kullanımı",
+          "body": "Bu web sitesini yasalara uygun şekilde kullanmayı ve iletişim formlarını veya otomatik sistemleri kötüye kullanmamayı kabul edersiniz. İçerik genel rehberlik içindir ve önceden haber verilmeksizin değişebilir."
+        },
+        {
+          "heading": "Ücretli hizmetler",
+          "body": "Ücretli mentorluk oturumları ve dijital ürünler için özel koşullar satın alma aşamasında sunulacaktır. İade politikaları ödeme öncesinde açıkça belirtilecektir."
+        }
+      ],
+      "todo": "TODO: Uygulanacak hukuk, sorumluluk sınırları ve uyuşmazlık çözümünü içeren hukuken onaylanmış nihai koşullarla değiştirin."
+    }
   }
 }

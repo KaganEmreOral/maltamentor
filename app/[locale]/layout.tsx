@@ -22,16 +22,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     metadataBase: new URL(siteUrl),
     title: {
-      default: isEn ? 'Mentor Malta | Expert Mentoring' : 'Mentor Malta | Uzman Mentorluk',
-      template: `%s | Mentor Malta`,
+      default: isEn
+        ? 'Malta Mentor | IT Careers and Relocation Guidance'
+        : 'Malta Mentor | IT Kariyeri ve Taşınma Rehberliği',
+      template: `%s | Malta Mentor`,
     },
     description: isEn
-      ? 'Expert mentoring for your success in Malta and beyond. Book a meeting today.'
-      : 'Malta ve ötesinde başarınız için uzman mentorluk. Bugün görüşme ayırın.',
+      ? 'Practical career and relocation guidance for international IT professionals exploring Malta.'
+      : 'Malta’yı değerlendiren uluslararası IT profesyonelleri için pratik kariyer ve taşınma rehberliği.',
     openGraph: {
       type: 'website',
       locale: locale === 'tr' ? 'tr_TR' : 'en_GB',
-      siteName: 'Mentor Malta',
+      siteName: 'Malta Mentor',
       url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://mentormalta.com'}${locale === 'en' ? '' : `/${locale}`}`,
     },
   };

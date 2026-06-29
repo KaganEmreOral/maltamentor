@@ -9,6 +9,7 @@ export default function sitemap() {
     '/packages',
     '/blog',
     '/contact',
+    '/career-fit',
     '/privacy',
     '/terms',
     '/blog/it-job-market-malta',

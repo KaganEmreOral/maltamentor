@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none" role="img" aria-label="Founder photo placeholder">
+  <rect width="400" height="500" fill="#F3F4F6"/>
+  <rect x="1" y="1" width="398" height="498" stroke="#E5E7EB" stroke-width="2" stroke-dasharray="8 8"/>
+  <circle cx="200" cy="170" r="72" fill="#D1D5DB"/>
+  <path d="M80 420c28-88 92-132 120-132s92 44 120 132" fill="#D1D5DB"/>
+  <text x="200" y="460" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-size="14" fill="#9CA3AF">Founder photo</text>
+</svg>
